@@ -21,6 +21,7 @@
     />
 
     <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -114,21 +115,108 @@
             </li>
             <li><a href="#">Contact</a></li>
           </ul>
-           <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav> <!-- .navbar -->
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-    </header> <!-- End Header -->
+    </header>
+    <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-      <div id="heroCarousel" data-bs-interval="5000" class="" data-bs-ride="carousel">
+      <div
+        id="heroCarousel"
+        data-bs-interval="5000"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/img/slide/slide-1.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="carousel-content animate__animated animate__fadeInUp">
+                <h2>
+                  Welcome to the
+                  <span>Jatiya Kabi Kazi Nazrul Islam University</span>
+                </h2>
+                <p>
+               
+                  
+                  Jatiya Kabi Kazi Nazrul Islam University was
+                  established by the Government of Bangladesh on 09 May 2006,
+                  though the initiative for its establishment was taken some
+                  years before..
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-2.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="carousel-content animate__animated animate__fadeInUp">
+                <h2>VISIT OUR CAMPUS LIFE.</h2>
+                <p>
+                 The university has a duly qualified and productive band of youthful faculty members and officers/staffs who are deeply committed to the university's mission to produce world class graduates in academic disciplines of arts, social sciences,
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-3.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="carousel-content animate__animated animate__fadeInUp">
+                <h2> Students' Celebrating their Graduation Moment</h2>
+                <p>
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi
+                  architecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bi bi-chevron-left"
+            aria-hidden="true"
+          ></span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bi bi-chevron-right"
+            aria-hidden="true"
+          ></span>
+        </a>
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
       </div>
     </section>
+    <!-- End Hero -->
 
     <main id="main">
-     
-
       <!-- Clients Section - Home Page -->
       <section id="clients" class="clients">
         <div class="container-fluid" data-aos="fade-up">
@@ -1891,7 +1979,6 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
