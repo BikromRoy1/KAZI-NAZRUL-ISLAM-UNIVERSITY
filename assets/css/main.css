@@ -21,7 +21,7 @@
 
 /* Global Colors */
 :root {
-  --color-background-topbar: #f8f6f5;
+  --color-background-topbar: #e8f8eb;
   --color-background-bottombar: #ffffff;
   --color-default: #212529;
   --color-default-rgb: 33, 37, 41;
@@ -157,7 +157,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 55px;
+  height: 60px;
   transition: all 0.5s;
   z-index: 997;
   background: var(--color-background-bottombar);
@@ -182,7 +182,7 @@ section {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 55px;
 }
 .scrolled-offset {
   margin-top: 70px;
@@ -242,7 +242,9 @@ section {
   visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  transition: all 0.5s ease-in-out;
+
   border-top: 2px solid #1bbd36;
 }
 .navbar .dropdown ul li {
@@ -262,6 +264,7 @@ section {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
   color: var(--color-primary);
+  background-color: #d1f2d7;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -288,6 +291,47 @@ section {
     left: -100%;
   }
 }
+.navbar .megamenu {
+  position: static;
+}
+
+.navbar .megamenu ul {
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.navbar .megamenu ul li {
+  flex: 1;
+  border-right: solid 1px #f0f0f0;
+}
+.navbar .megamenu ul li:last-child{
+  border-right: none;
+}
+.navbar .megamenu ul li .menu-title {
+  padding-left: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.navbar .megamenu ul li a,
+.navbar .megamenu ul li:hover > a {
+  color: #002147;
+  background: none;
+}
+
+.navbar .megamenu ul li a:hover,
+.navbar .megamenu ul li .active,
+.navbar .megamenu ul li .active:hover {
+  color: var(--color-primary);
+  background-color: #d1f2d7;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -338,7 +382,6 @@ section {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
-  
 }
 .navbar-mobile a,
 .navbar-mobile a:focus {
