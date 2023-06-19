@@ -306,7 +306,7 @@ section {
   flex: 1;
   border-right: solid 1px #f0f0f0;
 }
-.navbar .megamenu ul li:last-child{
+.navbar .megamenu ul li:last-child {
   border-right: none;
 }
 .navbar .megamenu ul li .menu-title {
@@ -806,37 +806,90 @@ section {
   }
 }
 
-/* Clients Section - Home Page
+/* Message from the Vice Chancellor - Home Page
 ------------------------------*/
-.clients {
-  padding: 10px 0;
+#message-vice .message-vice-image {
+  height: 300px;
 }
-
-.clients .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#message-vice .message-vice-image a {
+  display: block;
+  padding: 50px 30px;
+  box-shadow: 0 10px 10px 10px #cccccc;
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+#message-vice .message-vice-image a:hover{
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+#message-vice .vice-info {
+  height: 200px;
+}
+#message-vice .vice-info img {
+  width: 200px;
+  height: 180px;
+}
+#message-vice .vice-info p {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 26px;
+  margin: 0;
+  color: #333333;
+}
+#message-vice .vice-info h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #002147;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 14px;
+}
+#message-vice .Vice-message a {
+  display: block;
+  padding: 50px 30px;
+  box-shadow: 0 10px 10px 10px #cccccc;
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+#message-vice .Vice-message a:hover{
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+#message-vice .Vice-message .Vice-message-info {
+  height: 200px;
   overflow: hidden;
 }
-
-.clients .client-logo img {
-  padding: 40px;
-  max-width: 80%;
-  transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
+#message-vice .Vice-message-info h4 {
+  font-weight: 700;
+  color: var(--text-title-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#message-vice .Vice-message-info p {
+  text-align: justify;
+  margin-bottom: 0;
+  color: gray;
+  line-height: 26px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.Vice-message-more {
+  background-color: transparent;
+  color: #002147;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: all 0.35s ease-in-out;
+  float: right;
 }
 
-.clients .client-logo img:hover {
-  filter: none;
-  opacity: 1;
-}
+/* Pro-Vice Chancellor - Home Page
+------------------------------*/
 
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    padding: 20px;
-  }
-}
 
 /* About Section - Home Page
 ------------------------------*/
