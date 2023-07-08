@@ -96,6 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
    * Header fixed top on scroll
    */
   let selectHeader = select('#header');
+  let selectImage = select('.logo');
+
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop;
     let nextElement = selectHeader.nextElementSibling;
@@ -103,9 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (headerOffset - window.scrollY <= 0) {
         selectHeader.classList.add('fixed-top');
         nextElement.classList.add('scrolled-offset');
+        selectImage.classList.add('img-fixed-witdth');
       } else {
         selectHeader.classList.remove('fixed-top');
         nextElement.classList.remove('scrolled-offset');
+        selectImage.classList.remove('img-fixed-witdth');
       }
     };
     window.addEventListener('load', headerFixed);
@@ -256,18 +260,36 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+
+
   /**
-   * Init swiper sliders
+   * Testimonials slider
    */
-  function initSwiper() {
-    document.querySelectorAll('.swiper').forEach(function (swiper) {
-      let config = JSON.parse(
-        swiper.querySelector('.swiper-config').innerHTML.trim()
-      );
-      new Swiper(swiper, config);
-    });
-  }
-  window.addEventListener('load', initSwiper);
+  new Swiper('.activities-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
 
   /**
    * Animation on scroll function and init
