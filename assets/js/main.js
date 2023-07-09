@@ -249,18 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   window.addEventListener('load', initIsotopeLayout);
 
-  /**
-   * Frequently Asked Questions Toggle
-   */
-  document
-    .querySelectorAll('.faq-item h3, .faq-item .faq-toggle')
-    .forEach((faqItem) => {
-      faqItem.addEventListener('click', () => {
-        faqItem.parentNode.classList.toggle('faq-active');
-      });
-    });
-
-
 
   /**
    * Testimonials slider
@@ -281,6 +269,11 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
+      },
+
+      768: {
+        slidesPerView: 2,
         spaceBetween: 20,
       },
 

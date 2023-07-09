@@ -1081,7 +1081,7 @@ section {
   margin: 0 auto;
   width: 70px;
   height: 70px;
-  background: #e8f8eb;
+  background: #e8f8eb45;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -1209,17 +1209,17 @@ section {
 }
 
 .seminar-title .divider {
-  background: #a9000f;
+  background: var(--text-title-color);
   height: 5px;
 }
 
 .seminar-title h2 {
-  color: #a9000f;
+  color: var(--text-title-color);
   text-align: center;
   text-transform: uppercase;
   margin-top: 7px;
   font-size: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .seminar-card-body h5 {
@@ -1252,6 +1252,20 @@ section {
   font-weight: 600;
   padding: 7px 12px;
   margin-bottom: 0;
+}
+.seminar-btn a {
+   color: #002147;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  padding: 4px 11px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.seminar-btn a:hover{
+  background-color: #002147;
+  color: white;
 }
 
 /* Events and Notices Section - Home Page
@@ -1377,10 +1391,6 @@ section {
   overflow: hidden;
 }
 
-/* .activities-card {
-  box-shadow: 0 0 10px #cccccc;
-  background: #ffffff;
-} */
 .activities-card img {
   width: 100%;
   height: 230px;
