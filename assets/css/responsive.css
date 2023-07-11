@@ -1,0 +1,62 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .pc-logo {
+    display: none;
+  }
+  
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pc-logo {
+    display: none;
+  }
+  
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pc-logo {
+    display: none;
+  }
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    color: #002147;
+    white-space: nowrap;
+    padding: 10px 0px 10px 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .moblie-logo {
+    display: none;
+  }
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    color: #002147;
+    white-space: nowrap;
+    padding: 10px 0px 10px 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .moblie-logo {
+    display: none;
+  }
+}
