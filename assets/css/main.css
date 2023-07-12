@@ -940,8 +940,8 @@ section {
 
 #message-vice .vice-info p {
   font-weight: bold;
-  font-size: 13px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 23px;
   margin: 0;
   color: #333333;
 }
@@ -966,11 +966,6 @@ section {
 
 #message-vice .Vice-message a:hover {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
-}
-
-#message-vice .Vice-message .Vice-message-info {
-  /* height: 200px;
-  overflow: hidden; */
 }
 
 #message-vice .Vice-message-info h4 {
@@ -1024,6 +1019,7 @@ section {
 
 #Pro-Vice-Chancellor .Pro-Vice-Chancellor-info a:hover {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  
 }
 
 #Pro-Vice-Chancellor .Pro-Chancellor-info {
