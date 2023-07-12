@@ -19,16 +19,13 @@
 
 /* Global Colors */
 :root {
-  /* --color-background-topbar: #e8f8eb; */
   --color-background-topbar: #1bbd36e0;
   --color-background-bottombar: #002147;
   --color-default: #212529;
   --color-default-rgb: 33, 37, 41;
   --color-background: #ffffff;
   --color-background-rgb: 255, 255, 255;
-  /* --color-primary: #008374; */
   --color-primary: #1bbd36;
-  /* --color-primary-rgb: 0, 131, 116; */
   --color-primary-rgb: 27, 189, 54;
   --color-secondary: #f85a40;
   --color-secondary-rgb: 248, 90, 64;
@@ -166,32 +163,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# bottom Bar
---------------------------------------------------------------*/
-.bottombar {
-  border-bottom: 2px solid var(--color-primary);
-  padding: 10px 0;
-  font-size: 14px;
-}
-
-.bottombar .bottom-contact-info a {
-  color: #002147;
-  line-height: 0;
-  transition: 0.3s;
-  margin-left: 17px;
-  text-transform: uppercase;
-  padding: 10px 0;
-}
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
   height: 60px;
   transition: all 0.5s;
   z-index: 997;
-  /* background: var(--color-background-bottombar); */
-  /* background: #e8f8eb; */
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -233,7 +210,6 @@ section {
   padding: 0;
   margin: 0;
   width: 75px;
-  /* box-shadow: 0px 0px 7px 3px #f9f9f9; */
   margin-top: 4px;
 }
 
@@ -246,10 +222,6 @@ section {
 .scrolled-offset {
   margin-top: 70px;
 }
-/* .pc-logo a img {
-  height: 80px;
-} */
-
 .moblie-logo a img {
   height: 50px;
 }
@@ -1019,7 +991,6 @@ section {
 
 #Pro-Vice-Chancellor .Pro-Vice-Chancellor-info a:hover {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
-  
 }
 
 #Pro-Vice-Chancellor .Pro-Chancellor-info {
@@ -1027,9 +998,13 @@ section {
 }
 
 #Pro-Vice-Chancellor .Pro-Chancellor-info img {
-  width: 200px;
-  height: 180px;
-  padding-bottom: 6px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+  object-fit: cover;
+  border: 3px solid #dbdbdb;
+ box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 #Pro-Vice-Chancellor .Pro-Chancellor-info p {
@@ -1320,7 +1295,9 @@ section {
 .event-and-notices {
   background-color: #eee;
 }
-
+.event-card {
+  height: 475px;
+}
 .event-info {
   padding: 30px 30px;
   display: flex;
@@ -1386,6 +1363,8 @@ section {
   padding: 30px;
   border: 1px solid #e7e7e7;
   border-top: none;
+  height: 475px;
+  border-bottom: 3px solid #1bbd36;
 }
 
 .notices-card .notice-item {
