@@ -898,7 +898,7 @@ section {
   height: 310px;
   overflow: hidden;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   background: #fff;
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -941,7 +941,7 @@ section {
 
 #message-vice .Vice-message a {
   display: block;
-  padding: 40px 30px;
+  padding: 39.5px 30px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   background: #ffffff;
