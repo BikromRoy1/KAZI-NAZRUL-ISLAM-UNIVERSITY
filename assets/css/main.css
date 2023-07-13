@@ -647,6 +647,7 @@ section {
 .footer-imp-link ul li a {
   color: white;
   transition: all 0.4s;
+  font-size: 13px;
 }
 .footer-imp-link ul li a:hover {
   color: var(--color-primary);
@@ -667,7 +668,7 @@ section {
   margin-bottom: 15px;
   text-align: left;
   line-height: 1.4;
-  font-size: 16px;
+  font-size: 14px;
 }
 .footer-contact h6 {
   color: #fff;
@@ -675,7 +676,7 @@ section {
   margin-bottom: 7px;
   text-align: left;
   line-height: 1.4;
-  font-size: 15px;
+  font-size: 14px;
 }
 .footer-contact h3 {
   color: #fff;
@@ -698,14 +699,29 @@ section {
   line-height: 1.4;
   font-size: 18px;
 }
-.footer-find h4 a i {
-  padding: 0 0px 0 10px;
-  font-size: 23px;
-  font-weight: 500;
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #133b68;
+  color: #fff;
+  line-height: 1;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
-.footer-find h4 a {
-  color: white;
+
+.social-links a:hover {
+  background: #15a52d;
+  color: #151515;
+  text-decoration: none;
 }
+
 .footer-bottom {
   background: rgba(255, 255, 255, 0.06);
   padding: 20px 0px;
@@ -879,72 +895,70 @@ section {
 }
 
 #message-vice .message-vice-image {
-  height: 300px;
-}
-
-#message-vice .message-vice-image a {
-  display: block;
-  padding: 50px 30px;
-  /* box-shadow: 0 10px 10px 10px #cccccc; */
-  background: #ffffff;
-  transition: all 0.5s ease;
+  height: 310px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+.message-vice-image .member-info h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--text-title-color);
+}
 
-#message-vice .message-vice-image a:hover {
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+.message-vice-image .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 #message-vice .vice-info {
-  height: 200px;
+  height: 220px;
   text-align: center;
   margin: 0 auto;
 }
-
-#message-vice .vice-info img {
-  width: 200px;
-  height: 180px;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 6px;
+.message-vice-image .member-img {
+  position: relative;
+  overflow: hidden;
 }
 
-#message-vice .vice-info p {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 23px;
-  margin: 0;
-  color: #333333;
-}
-
-#message-vice .vice-info h5 {
-  text-align: center;
-  margin-bottom: 10px;
-  color: #002147;
-  font-weight: normal;
-  line-height: 1.2;
-  font-size: 14px;
+.message-vice-image .member-img:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
 }
 
 #message-vice .Vice-message a {
   display: block;
-  padding: 44px 30px;
+  padding: 40px 30px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   background: #ffffff;
   transition: all 0.5s ease;
-}
-
-#message-vice .Vice-message a:hover {
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  /* border: 2px dashed #d1d1d1; */
 }
 
 #message-vice .Vice-message-info h4 {
   font-weight: 700;
   color: var(--text-title-color);
   font-size: 20px;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #15a52d;
+}
+#message-vice .Vice-message-info h4 span {
+  padding-bottom: 11px;
+  border-bottom: 4px solid #15a52d;
 }
 
 #message-vice .Vice-message-info p {
@@ -954,75 +968,108 @@ section {
   line-height: 26px;
   font-weight: 500;
   font-size: 14px;
+  margin-top: 15px;
 }
 
 .Vice-message-more {
   background-color: transparent;
-  color: #002147;
+  color: #fff;
   border: 2px solid #002147;
+  background: #002147;
   border-radius: 30px;
   display: inline-block;
-  padding: 4px 11px;
+  padding: 3px 10px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.35s ease-in-out;
   margin-top: 10px;
 }
 
+.Vice-message .ri-double-quotes-l,
+.Vice-message .ri-double-quotes-r {
+  color: gray;
+  font-size: 25px;
+}
+
+.Vice-message .ri-double-quotes-l {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.Vice-message .ri-double-quotes-r {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 8px;
+}
+
 /* Pro-Vice Chancellor - Home Page
 ------------------------------*/
-#Pro-Vice-Chancellor {
-  padding-top: 10px;
+.Pro-Vice-Chancellor {
+  padding-top: 30px;
 }
-
-#Pro-Vice-Chancellor .Pro-Vice-Chancellor-info {
-  text-align: center;
-  height: 320px;
+.Pro-Vice-Chancellor .member {
+  margin-bottom: 60px;
+  position: relative;
+  cursor: pointer;
 }
-
-#Pro-Vice-Chancellor .Pro-Vice-Chancellor-info a {
-  display: block;
-  padding: 40px 30px;
+.Pro-Vice-Chancellor .member:hover h4 {
+  color: var(--color-primary);
+}
+.Pro-Vice-Chancellor .member .pic {
+  overflow: hidden;
+  height: 350px;
+  /* border: 2px solid #d1d1d1; */
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  background: #ffffff;
-  transition: all 0.5s ease;
 }
 
-#Pro-Vice-Chancellor .Pro-Vice-Chancellor-info a:hover {
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+.Pro-Vice-Chancellor .member .member-info {
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 15px;
+  color: #15222b;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 5px;
 }
 
-#Pro-Vice-Chancellor .Pro-Chancellor-info {
-  height: 220px;
-}
-
-#Pro-Vice-Chancellor .Pro-Chancellor-info img {
-  width: 190px;
-  height: 190px;
-  border-radius: 50%;
-  margin-bottom: 3px;
-  object-fit: cover;
-  border: 3px solid #dbdbdb;
- box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-#Pro-Vice-Chancellor .Pro-Chancellor-info p {
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 26px;
-  margin: 0;
-  color: #333333;
-}
-
-#Pro-Vice-Chancellor .Pro-Chancellor-info h5 {
-  text-align: center;
+.Pro-Vice-Chancellor .member h4 {
+  font-weight: 600;
   margin-bottom: 10px;
-  color: #002147;
-  font-weight: normal;
-  line-height: 1.2;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 17px;
+  color: var(--text-title-color);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.Pro-Vice-Chancellor .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #15a52d;
+  bottom: 0;
+  left: 0;
+}
+
+.Pro-Vice-Chancellor .member span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .Pro-Vice-Chancellor .member {
+    margin-bottom: 70px;
+  }
 }
 
 /* JKKNIU-number - Home Page
@@ -1295,11 +1342,21 @@ section {
 .event-and-notices {
   background-color: #eee;
 }
+.envents-container {
+  background-color: #fff;
+  padding: 15px;
+  border: 2px dashed #d1d1d1;
+  border-radius: 10px;
+}
+.envents-container:hover {
+  border-color: #1bbd36;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
 .event-card {
   height: 475px;
 }
 .event-info {
-  padding: 30px 30px;
+  padding: 25px 25px;
   display: flex;
 }
 
@@ -1358,13 +1415,13 @@ section {
   background-color: #002147;
   color: white;
 }
-
 .notices-card {
   padding: 30px;
   border: 1px solid #e7e7e7;
   border-top: none;
-  height: 475px;
-  border-bottom: 3px solid #1bbd36;
+  height: 510px;
+  border-left: 4px solid #1bbd36;
+  /* overflow-x: scroll; */
 }
 
 .notices-card .notice-item {
@@ -1385,6 +1442,10 @@ section {
 .notices-card .notice-item h5 a {
   color: #002147;
   font-size: 15px;
+  transition: all 0.3s;
+}
+.notices-card .notice-item h5 a:hover {
+  color: var(--color-primary);
 }
 
 .notices-card .notice-item p {
@@ -1407,6 +1468,17 @@ section {
   line-height: 25px;
   font-weight: 700;
   border-radius: 3px;
+  transition: all 250ms;
+}
+
+.all-event-btn a:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  color: white;
+  background-color: #15a52d;
 }
 
 /*--------------------------------------------------------------
@@ -1416,14 +1488,33 @@ section {
 .activities .activities-slider {
   overflow: hidden;
 }
-
+.activities-image {
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+}
+.activities-card:hover .activities-image img {
+  transform: scale(1.15);
+}
 .activities-card img {
   width: 100%;
   height: 230px;
+  border-radius: 5px 5px 0px 0px;
+  transition: all 0.6s;
+  border-bottom: 6px solid var(--color-primary);
 }
-
+.activities-card {
+  background: #fff;
+  box-shadow: 0px 0px 10px #00000014;
+  border: none;
+  /* border: 1px dotted #000000; */
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
 .activities-info {
   padding: 30px;
+}
+.activities-date {
+  text-align: right;
 }
 
 .activities-info .activities-date h6 {
@@ -1433,6 +1524,13 @@ section {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   text-align: right;
+  background: #dafbd8;
+  display: inline-block;
+  padding: 5px 13px;
+  border-radius: 5px;
+}
+.activities-info .activities-date h6 i {
+  margin-right: 5px;
 }
 
 .activities-info h4 {
@@ -1479,14 +1577,16 @@ section {
 .activities .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-
-  background-color: #fff;
+  background-color: var(--color-primary);
   opacity: 1;
   border: 1px solid var(--color-primary);
+  transition: all 0.4s ease;
 }
 
 .activities .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
+  width: 22px;
+  border-radius: 30px;
 }
 
 .all-activities-btn {
@@ -1502,5 +1602,15 @@ section {
   font-size: 14px;
   line-height: 25px;
   font-weight: 700;
+  transition: all 250ms;
   border-radius: 3px;
+}
+.all-activities-btn a:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  color: white;
+  background-color: #15a52d;
 }
