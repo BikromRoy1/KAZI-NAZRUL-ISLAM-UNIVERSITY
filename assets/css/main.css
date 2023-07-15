@@ -903,12 +903,14 @@ section {
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-right: 1px solid #eee;
 }
 .message-vice-image .member-info h4 {
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 19px;
   color: var(--text-title-color);
+  text-transform: uppercase;
 }
 
 .message-vice-image .member-info span {
@@ -1043,10 +1045,11 @@ section {
 .Pro-Vice-Chancellor .member h4 {
   font-weight: 600;
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 16px;
   color: var(--text-title-color);
   position: relative;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .Pro-Vice-Chancellor .member h4::after {
