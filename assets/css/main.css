@@ -1090,7 +1090,7 @@ section {
   --color-background: #000000;
   --color-background-rgb: 0, 0, 0;
   position: relative;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .stats img {
@@ -1118,12 +1118,19 @@ section {
 }
 
 .stats .stats-item {
-  padding: 30px;
+  padding: 25px 15px;
   width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.stats .stats-item:hover {
+  border: 1px solid #15a52d;
 }
 
 .stats .stats-icons {
-  margin: 0 auto;
   width: 64px;
   height: 64px;
   background: #1bbd36;
@@ -1132,7 +1139,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   transform-style: preserve-3d;
   position: relative;
   z-index: 2;
@@ -1157,10 +1163,13 @@ section {
 }
 
 .stats .stats-item span {
-  font-size: 48px;
+  font-size: 47px;
   display: block;
   color: var(--color-default);
   font-weight: 700;
+  display: block;
+  text-align: left;
+  line-height: 55px;
 }
 
 .stats .stats-item p {
@@ -1170,13 +1179,18 @@ section {
   font-size: 16px;
   font-weight: 700;
   color: rgba(var(--color-default-rgb), 0.7);
+  text-align: left;
 }
 
 /* FACULTIES and INSTITUTES Section - Home Page
 ------------------------------*/
+#FACULTIES {
+  padding-bottom: 30px;
+}
 #FACULTIES .FACULTIES-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
   padding: 20px;
+  border-radius: 4px;
 }
 
 .FACULTIES-single .FACULTIES-line {
@@ -1200,6 +1214,14 @@ section {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: left;
+  border-radius: 5px 0px 0px 5px;
+  display: flex;
+  align-items: center;
+}
+.faculties-items i {
+  font-size: 26px;
+  padding-right: 8px;
+  line-height: 1;
 }
 
 .FACULTIES-single .faculties-items:hover {
@@ -1215,8 +1237,9 @@ section {
 .FACULTIES-single .faculties-items a {
   text-shadow: 2px 2px 5px #fff;
   color: var(--color-primary);
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .INSTITUTES-single .INSTITUTES-line {
@@ -1240,6 +1263,15 @@ section {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: right;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.INSTITUTES-items i {
+  font-size: 26px;
+  padding-left: 8px;
+  line-height: 1;
 }
 
 .INSTITUTES-single .INSTITUTES-items:hover {
@@ -1255,8 +1287,9 @@ section {
 .INSTITUTES-single .INSTITUTES-items a {
   text-shadow: 2px 2px 5px #fff;
   color: #194682;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 /* SEMINAR and WORKSHOP Section - Home Page
@@ -1274,15 +1307,20 @@ section {
 .seminar-title .divider {
   background: var(--text-title-color);
   height: 5px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .seminar-title h2 {
-  color: var(--text-title-color);
+  /* color: var(--text-title-color); */
+  color: white;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 7px;
+  /* margin-top: 7px; */
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  padding: 5px 0px;
+  background: var(--text-title-color);
+  border-radius: 0px 0px 5px 5px;
 }
 
 .seminar-card-body h5 {
@@ -1357,37 +1395,48 @@ section {
 }
 .event-card {
   height: 475px;
+  transition: 0.5s;
+}
+.event-card:hover {
+  transform: translateY(-7px);
+}
+.event-card img {
+  height: 195px;
 }
 .event-info {
-  padding: 25px 25px;
+  padding: 23px 23px;
   display: flex;
 }
 
 .event-info .event-date {
   text-align: center;
-  min-width: 75px;
+  min-width: 80px;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: -3px;
+  background: #002147;
+  height: 65px;
+  border-radius: 4px;
+  padding: 3px;
 }
 
 .event-info .event-date strong {
   display: block;
   font-weight: 800;
   line-height: 1;
-  font-size: 30px;
+  font-size: 29px;
   color: var(--color-primary);
 }
 
 .event-info .event-date span {
-  color: #666666;
-  font-size: 14px;
+  color: #fff;
+  font-size: 13px;
 }
 
 .event-info .event-text {
-  padding-left: 30px;
+  padding-left: 22px;
 }
 
 .event-info .event-text h4 {
@@ -1402,7 +1451,9 @@ section {
 .event-info .event-text h4 a {
   color: var(--text-title-color);
 }
-
+.event-info .event-text h4 a:hover {
+  color: var(--color-primary);
+}
 .event-more-btn a {
   color: #002147;
   font-family: 'Poppins', sans-serif;
@@ -1440,6 +1491,9 @@ section {
   color: #002147;
   line-height: 1.2;
   font-weight: 600;
+  border-left: 2px solid #002147;
+  border-radius: 5px;
+  padding-left: 10px;
 }
 
 .notices-card .notice-item h5 a {
