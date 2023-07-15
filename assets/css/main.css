@@ -1219,9 +1219,14 @@ section {
   align-items: center;
 }
 .faculties-items i {
-  font-size: 26px;
-  padding-right: 8px;
+  font-size: 20px;
+  margin-right: 8px;
   line-height: 1;
+  background: var(--color-primary);
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #87fcae;
+  color: white;
 }
 
 .FACULTIES-single .faculties-items:hover {
@@ -1269,9 +1274,14 @@ section {
   justify-content: end;
 }
 .INSTITUTES-items i {
-  font-size: 26px;
-  padding-left: 8px;
+  font-size: 20px;
+  margin-left: 8px;
   line-height: 1;
+  background: #194682;
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #71acfa;
+  color: white;
 }
 
 .INSTITUTES-single .INSTITUTES-items:hover {
