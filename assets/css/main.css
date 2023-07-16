@@ -621,7 +621,7 @@ section {
   padding-bottom: 0px;
   background: var(--text-title-color);
   color: white;
-  border-top: 2px solid #1bbd36;
+  border-top: 3px solid #1bbd36;
 }
 .footer-top {
   padding-bottom: 30px;
@@ -693,10 +693,9 @@ section {
   color: #fff;
   font-weight: 600;
   border-bottom: 3px solid #eeeeee;
-  padding-bottom: 6px;
-  margin-bottom: 15px;
   text-align: left;
   line-height: 1.4;
+  margin-bottom: 5px;
   font-size: 18px;
 }
 .social-links a {
@@ -907,7 +906,7 @@ section {
 }
 .message-vice-image .member-info h4 {
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 19px;
   color: var(--text-title-color);
   text-transform: uppercase;
@@ -920,13 +919,17 @@ section {
 }
 
 #message-vice .vice-info {
-  height: 220px;
+  height: 230px;
   text-align: center;
   margin: 0 auto;
 }
 .message-vice-image .member-img {
   position: relative;
   overflow: hidden;
+  padding: 20px 0px;
+}
+.member-img img {
+  height: 210px;
 }
 
 .message-vice-image .member-img:after {
@@ -1196,11 +1199,12 @@ section {
 .FACULTIES-single .FACULTIES-line {
   width: 100%;
   height: 5px;
-  background-color: var(--color-primary);
+  /* background-color: #3f51b5; */
+  background-color: #673ab7;
 }
 
 .FACULTIES-single h3 {
-  color: var(--color-primary);
+  color: #673ab7;
   text-align: center;
   text-transform: uppercase;
   margin-top: 5px;
@@ -1222,15 +1226,15 @@ section {
   font-size: 20px;
   margin-right: 8px;
   line-height: 1;
-  background: var(--color-primary);
+  background: #673ab7;
   padding: 5px;
   border-radius: 50%;
-  border: 2px solid #87fcae;
+  border: 2px solid #b48cfa;
   color: white;
 }
 
 .FACULTIES-single .faculties-items:hover {
-  background-color: #1e8440;
+  background-color: #673ab7;
   transition: background-color 1s ease-out;
 }
 
@@ -1241,7 +1245,7 @@ section {
 
 .FACULTIES-single .faculties-items a {
   text-shadow: 2px 2px 5px #fff;
-  color: var(--color-primary);
+  color: #673ab7;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
@@ -1393,7 +1397,7 @@ section {
 .event-and-notices {
   background-color: #eee;
 }
-.envents-container {
+/* .envents-container {
   background-color: #fff;
   padding: 15px;
   border: 2px dashed #d1d1d1;
@@ -1402,7 +1406,7 @@ section {
 .envents-container:hover {
   border-color: #1bbd36;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
+} */
 .event-card {
   height: 475px;
   transition: 0.5s;
@@ -1479,13 +1483,23 @@ section {
   background-color: #002147;
   color: white;
 }
+
+#notice {
+  padding-top: 60px;
+}
+/* .notice-all-items{
+   background-color: #fff;
+  padding: 15px;
+  border: 2px dashed #d1d1d1;
+  border-radius: 10px;
+} */
 .notices-card {
-  padding: 30px;
+  padding: 30px 35px;
   border: 1px solid #e7e7e7;
   border-top: none;
   height: 510px;
-  border-left: 4px solid #1bbd36;
-  /* overflow-x: scroll; */
+  border-top: 3px solid #1bbd36;
+  overflow-x: scroll;
 }
 
 .notices-card .notice-item {
@@ -1529,7 +1543,7 @@ section {
 .all-event-btn a {
   font-family: 'Poppins', sans-serif;
   background-color: var(--color-primary);
-  color: #002147;
+  color: #fff;
   padding: 10px 40px 10px;
   font-size: 14px;
   line-height: 25px;
@@ -1547,7 +1561,18 @@ section {
   color: white;
   background-color: #15a52d;
 }
-
+.notice-nav-btn {
+  color: var(--text-title-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.notice-nav-btn:hover {
+  color: var(--color-primary);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #002147;
+}
 /*--------------------------------------------------------------
 # activities
 --------------------------------------------------------------*/
@@ -1664,7 +1689,7 @@ section {
 .all-activities-btn a {
   font-family: 'Poppins', sans-serif;
   background-color: var(--color-primary);
-  color: #002147;
+  color: #fff;
   padding: 10px 40px 10px;
   font-size: 14px;
   line-height: 25px;
