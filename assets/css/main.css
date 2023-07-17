@@ -141,7 +141,6 @@ section {
 }
 
 #topbar .contact-info h4 {
-  /* color: var(--text-title-color); */
   color: #fff;
   margin-bottom: 0px;
   font-weight: 600;
@@ -149,7 +148,6 @@ section {
 }
 
 #topbar .social-login-links a {
-  /* color: #002147; */
   color: #fff;
   line-height: 0;
   transition: 0.3s;
@@ -180,7 +178,6 @@ section {
 
 #header .logo {
   z-index: 1;
-  /* position: relative; */
   text-align: center;
   margin-top: -47px;
   margin-bottom: 0px;
@@ -288,9 +285,7 @@ section {
   visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  /* transition: 0.3s; */
   transition: all 0.5s ease-in-out;
-
   border-top: 2px solid #1bbd36;
 }
 
@@ -951,7 +946,6 @@ section {
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   background: #ffffff;
   transition: all 0.5s ease;
-  /* border: 2px dashed #d1d1d1; */
 }
 
 #message-vice .Vice-message-info h4 {
@@ -1011,78 +1005,55 @@ section {
 
 /* Pro-Vice Chancellor - Home Page
 ------------------------------*/
-.Pro-Vice-Chancellor {
-  padding-top: 30px;
+.Pro-Vice {
+  padding: 30px 0;
 }
-.Pro-Vice-Chancellor .member {
-  margin-bottom: 60px;
-  position: relative;
-  cursor: pointer;
+.Pro-Vice .Pro-Vice-member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  transition: all 0.4s ease-in-out;
 }
-.Pro-Vice-Chancellor .member:hover h4 {
+.Pro-Vice .Pro-Vice-member:hover {
+  box-shadow: none;
+  transform: translateY(-7px);
+}
+.Pro-Vice .Pro-Vice-member:hover .Pro-Vice-member-info h4 {
   color: var(--color-primary);
 }
-.Pro-Vice-Chancellor .member .pic {
-  overflow: hidden;
-  height: 350px;
-  /* border: 2px solid #d1d1d1; */
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-.Pro-Vice-Chancellor .member .member-info {
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
-  right: 20px;
-  background: #fff;
-  padding: 20px 15px;
-  color: #15222b;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: 0.5s;
-  border-radius: 5px;
-}
-
-.Pro-Vice-Chancellor .member h4 {
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: var(--text-title-color);
+.Pro-Vice .Pro-Vice-member .Pro-Vice-member-img {
   position: relative;
-  padding-bottom: 10px;
+  overflow: hidden;
+  background: #d6d6d8;
+}
+
+.Pro-Vice .Pro-Vice-member .Pro-Vice-member-info {
+  padding: 20px 15px;
+}
+
+.Pro-Vice .Pro-Vice-member .Pro-Vice-member-info h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 17px;
+  color: #002147;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.Pro-Vice-Chancellor .member h4::after {
-  content: '';
-  position: absolute;
+.Pro-Vice .Pro-Vice-member .Pro-Vice-member-info span {
   display: block;
-  width: 50px;
-  height: 1px;
-  background: #15a52d;
-  bottom: 0;
-  left: 0;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.Pro-Vice-Chancellor .member span {
-  display: block;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-@media (max-width: 992px) {
-  .Pro-Vice-Chancellor .member {
-    margin-bottom: 70px;
-  }
-}
-
-/* JKKNIU-number - Home Page
-------------------------------*/
-#JKKNIU-number {
-  padding-bottom: 0px;
-  padding-top: 0px;
+.Pro-Vice .Pro-Vice-member .Pro-Vice-member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 /* Stats Section - Home Page
@@ -1199,7 +1170,6 @@ section {
 .FACULTIES-single .FACULTIES-line {
   width: 100%;
   height: 5px;
-  /* background-color: #3f51b5; */
   background-color: #673ab7;
 }
 
@@ -1309,12 +1279,10 @@ section {
 /* SEMINAR and WORKSHOP Section - Home Page
 ------------------------------*/
 #seminar {
-  /* background-color: #002147; */
   padding-top: 10px;
 }
 
 .seminar-container {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09); */
   padding: 20px;
 }
 
@@ -1325,11 +1293,9 @@ section {
 }
 
 .seminar-title h2 {
-  /* color: var(--text-title-color); */
   color: white;
   text-align: center;
   text-transform: uppercase;
-  /* margin-top: 7px; */
   font-size: 22px;
   margin-bottom: 12px;
   padding: 5px 0px;
@@ -1397,16 +1363,6 @@ section {
 .event-and-notices {
   background-color: #eee;
 }
-/* .envents-container {
-  background-color: #fff;
-  padding: 15px;
-  border: 2px dashed #d1d1d1;
-  border-radius: 10px;
-}
-.envents-container:hover {
-  border-color: #1bbd36;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-} */
 .event-card {
   height: 475px;
   transition: 0.5s;
@@ -1487,12 +1443,6 @@ section {
 #notice {
   padding-top: 60px;
 }
-/* .notice-all-items{
-   background-color: #fff;
-  padding: 15px;
-  border: 2px dashed #d1d1d1;
-  border-radius: 10px;
-} */
 .notices-card {
   padding: 30px 35px;
   border: 1px solid #e7e7e7;
@@ -1598,7 +1548,6 @@ section {
   background: #fff;
   box-shadow: 0px 0px 10px #00000014;
   border: none;
-  /* border: 1px dotted #000000; */
   border-radius: 5px;
   transition: all 0.4s ease;
 }
