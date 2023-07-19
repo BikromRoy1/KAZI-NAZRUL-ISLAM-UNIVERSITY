@@ -2077,12 +2077,78 @@ section {
 /*--------------------------------------------------------------
 # On-Campus Security
 --------------------------------------------------------------*/
-#campus-security{
+#campus-security {
   background: #f1f7fd;
 }
 /*--------------------------------------------------------------
 # Recreation
 --------------------------------------------------------------*/
-#Recreation{
+#Recreation {
   background: #f1f7fd;
+}
+
+/*! ********   JKKNIU at a glance page page -   ********** */
+/*--------------------------------------------------------------
+#  at a glance
+--------------------------------------------------------------*/
+#glance {
+  background: #f1f7fd;
+}
+.glance .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+.glance .accordion-list li + li {
+  margin-top: 15px;
+}
+.glance .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+.glance .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.glance .accordion-list span {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.glance .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.glance .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+.glance .accordion-list .icon-show {
+  display: none;
+}
+
+.glance .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.glance .accordion-list a.collapsed:hover {
+  color: var(--color-primary);
+}
+
+.glance .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.glance .accordion-list a.collapsed .icon-close {
+  display: none;
 }
