@@ -1931,6 +1931,34 @@ section {
 
 /*! ********   Resources page -   ********** */
 /*--------------------------------------------------------------
+# common-part of design
+--------------------------------------------------------------*/
+.resources-page-common-part-content ul {
+  list-style: none;
+  padding: 0;
+}
+.resources-page-common-part-content p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.resources-page-common-part-content ul li {
+  padding-left: 28px;
+  position: relative;
+  text-align: justify;
+}
+.resources-page-common-part-content ul li + li {
+  margin-top: 10px;
+}
+.resources-page-common-part-content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+/*--------------------------------------------------------------
 # Library
 --------------------------------------------------------------*/
 #Library .library-content ul {
@@ -2012,4 +2040,49 @@ section {
 .glightbox-clean .gslide-title {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+/*--------------------------------------------------------------
+# Laboratory Facilities
+--------------------------------------------------------------*/
+#laboratory-fac {
+  background: #f1f7fd;
+}
+.laboratory-fac .laboratory-fac-content ul {
+  list-style: none;
+  padding: 0;
+}
+.laboratory-fac .laboratory-fac-content ul li {
+  padding-left: 28px;
+  position: relative;
+  text-align: justify;
+}
+.laboratory-fac .laboratory-fac-content ul li + li {
+  margin-top: 10px;
+}
+.laboratory-fac .laboratory-fac-content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+/*--------------------------------------------------------------
+# Student Service Offices
+--------------------------------------------------------------*/
+#student-service {
+  background: #f1f7fd;
+}
+/*--------------------------------------------------------------
+# On-Campus Security
+--------------------------------------------------------------*/
+#campus-security{
+  background: #f1f7fd;
+}
+/*--------------------------------------------------------------
+# Recreation
+--------------------------------------------------------------*/
+#Recreation{
+  background: #f1f7fd;
 }
