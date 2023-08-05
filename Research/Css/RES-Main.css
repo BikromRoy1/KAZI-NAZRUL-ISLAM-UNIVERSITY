@@ -1,0 +1,89 @@
+/**
+* Website Name: Jatiya Kabi Kazi Nazrul Islam University, Bangladesh.
+* Updated: June 12 2023 with Bootstrap v5.3.0
+* Author: Designed & Developed by : " PeopleNTech "
+* Address: Good Luck Center 151/7 Green Road, 8th Floor Dhaka 1205 Bangladesh
+* contact-us: Phone: +880 9613 337448 EXT: 2020 , Email: Software@peoplentech.net
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: Google Fonts and Trending Color Palettes
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --font-default: 'Poppins', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+/* Global Colors */
+:root {
+  --color-background-topbar: #1bbd36e0;
+  --color-background-bottombar: #002147;
+  --color-default: #212529;
+  --color-default-rgb: 33, 37, 41;
+  --color-background: #ffffff;
+  --color-background-rgb: 255, 255, 255;
+  --color-primary: #1bbd36;
+  --color-primary-rgb: 27, 189, 54;
+  --color-secondary: #f85a40;
+  --color-secondary-rgb: 248, 90, 64;
+  --color-box-background: #ffffff;
+  --color-box-background-rgb: 255, 255, 255;
+  --color-inverse: #ffffff;
+  --color-inverse-rgb: 255, 255, 255;
+  --text-title-color: #002147;
+}
+
+/* Nav Menu Colors */
+:root {
+  --color-nav: #3a3939;
+  --color-nav-hover: #f85a40;
+  --color-nav-dropdown: #3a3939;
+  --color-nav-dropdown-hover: #f85a40;
+  --color-nav-dropdown-background: #ffffff;
+  --color-nav-mobile-background: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  color: var(--color-default);
+  background-color: var(--color-background);
+  font-family: var(--font-default);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgba(var(--color-primary-rgb), 0.7);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+section {
+  color: var(--color-default);
+  background-color: var(--color-background);
+  padding: 60px 0;
+  overflow: clip;
+}
+
