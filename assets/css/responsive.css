@@ -12,6 +12,9 @@
   .section-title h2 {
     font-size: 25px;
   }
+   #message-vice .Vice-message a {
+    height: auto;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -27,6 +30,9 @@
   }
   .section-title h2 {
     font-size: 26px;
+  }
+   #message-vice .Vice-message a {
+    height: auto;
   }
 }
 
@@ -54,6 +60,9 @@
   .notices-card {
     overflow-x: scroll;
   }
+  #message-vice .Vice-message a {
+    height: auto;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -73,6 +82,9 @@
     padding: 10px 0px 10px 16px;
     text-transform: uppercase;
     transition: 0.3s;
+  }
+   #message-vice .Vice-message a {
+    height: auto;
   }
 }
 
