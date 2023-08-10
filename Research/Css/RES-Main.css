@@ -1017,3 +1017,68 @@ section {
   z-index: 1;
   border-radius: 30px;
 }
+/*! ********   PUBLICATIONS page -   ********** */
+/*--------------------------------------------------------------
+#  PUBLICATIONS all css
+--------------------------------------------------------------*/
+#Projects .Projects-items {
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 5px;
+  display: flex;
+  padding: 20px;
+  transition: 0.4s;
+  margin-bottom: 20px;
+}
+#Projects .Projects-items .icon {
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-right: 20px;
+  position: relative;
+  transition: 0.4s;
+  width: 60px;
+}
+#Projects .Projects-items .icon i {
+  font-size: 30px;
+  transition: 0.4s;
+  color: var(--color-primary);
+}
+#Projects .Projects-items .content h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 0;
+  transition: 0.4s;
+}
+#Projects .Projects-items .content h6 a {
+  color: var(--text-title-color);
+}
+#Projects .Projects-items .content p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #6f6b80;
+  margin-bottom: 0;
+  transition: 0.4s;
+}
+#Projects .Projects-items:hover {
+  background: #0ecd73;
+}
+#Projects .Projects-items:hover .content h6 a {
+  color: #fff;
+}
+#Projects .Projects-items:hover .content p {
+  color: #fff;
+}
+#Projects .Projects-items:hover .icon {
+  background: hsla(0, 0%, 100%, 0.15);
+  box-shadow: none;
+}
+#Projects .Projects-items:hover .icon i {
+  color: #fff;
+}
