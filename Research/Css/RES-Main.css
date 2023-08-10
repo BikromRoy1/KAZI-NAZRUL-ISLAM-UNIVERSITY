@@ -120,6 +120,59 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 70px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin-top: 155px;
+  background-repeat: no-repeat;
+}
+.breadcrumbs:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+}
+.breadcrumbs h2 {
+  font-size: 43px;
+  font-weight: 600;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.breadcrumbs ol a {
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.breadcrumbs ol a i {
+  margin-right: 3px;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: '/';
+}
+
+/*--------------------------------------------------------------
 # Section Title
 --------------------------------------------------------------*/
 .section-title {
@@ -851,4 +904,116 @@ section {
   letter-spacing: 1px;
   overflow: hidden;
   border-radius: 4px;
+}
+
+/*--------------------------------------------------------------
+# Workshop Area
+--------------------------------------------------------------*/
+#workshop-area .workshopArea-single-items a {
+  background-image: url(../../assets/img/post/area.jpg);
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  padding: 40px 15px;
+  border-radius: 10px;
+  padding-top: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+}
+#workshop-area .workshopArea-single-items a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+#workshop-area .workshopArea-single-items a h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  transition: 0.3s all;
+}
+#workshop-area .workshopArea-single-items a h5:hover {
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Workshop Area
+--------------------------------------------------------------*/
+#Events {
+  background: #f1f7fd;
+  background-image: url('../../assets/img/post/IPT425.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#Events .Events-news {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+}
+#Events .Events-news .event-image {
+  flex-shrink: 0;
+}
+#Events .Events-news .event-image img {
+  border-radius: 100%;
+  max-width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+#Events .Events-news .event-content {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+#Events .Events-news .event-content span {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+#Events .Events-news .event-content span i {
+  font-size: 18px;
+  padding-right: 8px;
+}
+#Events .Events-news .event-content h4 a {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: var(--text-title-color);
+}
+
+#Events .Events-news .event-content p {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #6f6b80;
+  margin-bottom: 0;
+}
+#Events .Events-items .content .read-more-btn a {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 14px;
+  padding: 7px 15px;
+  border: 2px solid var(--text-title-color);
+  color: #002147;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
 }
