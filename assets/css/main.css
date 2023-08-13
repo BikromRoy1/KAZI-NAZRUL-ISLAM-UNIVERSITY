@@ -2460,3 +2460,70 @@ section {
   font-weight: 400;
   font-size: 15px;
 }
+
+/*! ********   Departments -   ********** */
+/*--------------------------------------------------------------
+#  Departments css 
+--------------------------------------------------------------*/
+#departments .departments-card {
+  box-shadow: 0 0 20px #eee;
+  border: 0;
+  background: #fff;
+  /* background: #f1f7fd; */
+  border-radius: 5px;
+  border-bottom: 2px solid #15a52d;
+}
+#departments .departments-image {
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+#departments .departments-image img {
+  border-radius: 5px 5px 0 0;
+  height: 240px;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+#departments .departments-card:hover .departments-image img {
+  transform: scale(1.15);
+  border-radius: 5px 5px 0 0;
+}
+#departments .departments-info {
+  padding: 30px 30px 35px 30px;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+#departments .departments-info h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 19px;
+}
+#departments .departments-info h4 a {
+  color: var(--text-title-color);
+  transition: all 0.35s ease-in-out;
+}
+#departments .departments-info h4 a:hover {
+  color: var(--color-primary);
+}
+#departments .departments-info .departments-btn a {
+  color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--color-primary);
+  border-radius: 30px;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+#departments .departments-info .departments-btn a i {
+  margin-left: 4px;
+  font-weight: 500;
+}
+
+#departments .departments-info .departments-btn a:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
