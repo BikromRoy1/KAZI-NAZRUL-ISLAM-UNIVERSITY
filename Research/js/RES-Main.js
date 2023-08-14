@@ -1,5 +1,5 @@
 (function () {
-  'use strict';
+  ('use strict');
 
   /**
    * Easy selector helper function
@@ -184,5 +184,39 @@
           "<li data-bs-target='#heroCarousel' data-bs-slide-to='" +
           index +
           "'></li>");
+  });
+
+  /**
+   * Research Activities slider
+   */
+  new Swiper('.Programs-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
   });
 })();

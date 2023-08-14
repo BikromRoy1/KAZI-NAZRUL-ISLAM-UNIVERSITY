@@ -1305,3 +1305,81 @@ section {
   background: transparent;
   color: #002147;
 }
+/*--------------------------------------------------------------
+#  Academic Programs
+--------------------------------------------------------------*/
+.academic-programs .Programs-carousel,
+.academic-programs .Programs-slider {
+  overflow: hidden;
+}
+.Programs-card {
+  box-shadow: 0 0 20px #eee;
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+}
+.Programs-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.Programs-image img {
+  border-radius: 5px 5px 0 0;
+  height: 240px;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+
+.Programs-card:hover .Programs-image img {
+  transform: scale(1.15);
+  border-radius: 5px 5px 0 0;
+}
+.Programs-info {
+  padding: 30px 30px 35px 30px;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+.Programs-info h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+}
+.Programs-info h4 a {
+  color: var(--text-title-color);
+}
+.Programs-info .Programs-btn a {
+  color: #002147;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  padding: 4px 11px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.Programs-info .Programs-btn a:hover {
+  background-color: #002147;
+  color: white;
+}
+
+.academic-programs .swiper-pagination {
+  margin-top: 25px;
+  position: relative;
+}
+.academic-programs .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-primary);
+  opacity: 1;
+  border: 1px solid var(--color-primary);
+  transition: all 0.4s ease;
+}
+.academic-programs .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+  width: 22px;
+  border-radius: 30px;
+}
