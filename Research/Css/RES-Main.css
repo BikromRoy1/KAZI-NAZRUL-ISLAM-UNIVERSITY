@@ -1,7 +1,8 @@
 /**
 * Website Name: Jatiya Kabi Kazi Nazrul Islam University, Bangladesh.
 * Updated: June 12 2023 with Bootstrap v5.3.0
-* Author: Designed & Developed by : " PeopleNTech "
+* Author: Designed & Developed by : " PeopleNTech-software "
+* Designer : Bikrom Roy - PeopleNTech software
 * Address: Good Luck Center 151/7 Green Road, 8th Floor Dhaka 1205 Bangladesh
 * contact-us: Phone: +880 9613 337448 EXT: 2020 , Email: Software@peoplentech.net
 */
@@ -1189,4 +1190,118 @@ section {
 }
 #Projects-list .Projects-list-table tr td:nth-child(7) {
   text-align: center;
+}
+
+/*! ********   Department-Details  page -   ********** */
+/*--------------------------------------------------------------
+#  MESSAGE FROM THE DEPARTMENT HEAD
+--------------------------------------------------------------*/
+#Msg-dep-Head .welcome-message {
+  border-bottom: 2px solid var(--color-primary);
+}
+#Msg-dep-Head .welcome-message h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  text-transform: uppercase;
+}
+#Msg-dep-Head .welcome-message h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+  text-transform: uppercase;
+}
+
+#Msg-dep-Head .department-head {
+  padding-top: 25px;
+}
+
+#Msg-dep-Head .message-dep-head p {
+  text-align: justify;
+  color: #333333;
+}
+#Msg-dep-Head .DEPARTMENT-card {
+  border: 1px solid #eef0ef;
+}
+#Msg-dep-Head .DEPARTMENT-card img {
+  height: 180px;
+  object-fit: cover;
+}
+#Msg-dep-Head .DEPARTMENT-card-body {
+  text-align: center;
+}
+#Msg-dep-Head .DEPARTMENT-card-body h5 {
+  color: #002147;
+  font-weight: 600;
+}
+#Msg-dep-Head .DEPARTMENT-card-body p {
+  font-size: 15px;
+}
+#Msg-dep-Head .message-dep-head .read-more {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #002147;
+  background: #002147;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 4px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.35s ease-in-out;
+}
+#Msg-dep-Head .message-dep-head .read-more i {
+  padding-left: 4px;
+  font-weight: 500;
+}
+#Msg-dep-Head .message-dep-head .read-more:hover {
+  background: transparent;
+  color: #002147;
+}
+/*--------------------------------------------------------------
+#  ABOUT THE DEPARTMENT
+--------------------------------------------------------------*/
+#about-department {
+  background: #f1f7fd;
+}
+#about-department .welcome-message {
+  border-bottom: 2px solid var(--color-primary);
+}
+#about-department .welcome-message h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  text-transform: uppercase;
+}
+#about-department .welcome-message h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+  text-transform: uppercase;
+}
+#about-department .about-department-content {
+  padding-top: 25px;
+}
+#about-department .about-department-content p {
+  text-align: justify;
+  color: #333333;
+}
+#about-department .about-department-content .read-more {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #002147;
+  background: #002147;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 4px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.35s ease-in-out;
+}
+#about-department .about-department-content .read-more i {
+  padding-left: 4px;
+  font-weight: 500;
+}
+#about-department .about-department-content .read-more:hover {
+  background: transparent;
+  color: #002147;
 }
