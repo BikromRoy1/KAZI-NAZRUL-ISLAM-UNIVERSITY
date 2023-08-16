@@ -1329,7 +1329,6 @@ section {
   object-fit: cover;
   transition: all 0.6s;
 }
-
 .Programs-card:hover .Programs-image img {
   transform: scale(1.15);
   border-radius: 5px 5px 0 0;
@@ -1360,12 +1359,10 @@ section {
   font-weight: 600;
   transition: all 0.3s;
 }
-
 .Programs-info .Programs-btn a:hover {
   background-color: #002147;
   color: white;
 }
-
 .academic-programs .swiper-pagination {
   margin-top: 25px;
   position: relative;
@@ -1382,4 +1379,116 @@ section {
   background-color: var(--color-primary);
   width: 22px;
   border-radius: 30px;
+}
+
+/*--------------------------------------------------------------
+#  Latest News
+--------------------------------------------------------------*/
+#latest-news {
+  background: #f1f7fd;
+}
+
+#latest-news {
+  background: #f1f7fd;
+}
+#latest-news .latest-news-card {
+  background: #fff;
+  border: none;
+}
+#latest-news .thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+#latest-news .thumbnail img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.4s;
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.6s;
+}
+#latest-news .latest-news-card:hover .thumbnail img {
+  transform: scale(1.15);
+  border-radius: 5px 5px 0 0;
+}
+#latest-news .latest-news-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+#latest-news .latest-news-card-content {
+  padding: 20px 24px 24px;
+}
+#latest-news .latest-news-card-content h5 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-title-color);
+  cursor: pointer;
+  transition: all 0.6s;
+}
+#latest-news .latest-news-card-content h5:hover {
+  color: var(--color-primary);
+}
+#latest-news .latest-news-card-content p {
+  color: #333333;
+  line-height: 26px;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+#latest-news .latest-news-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#latest-news .latest-news-card-bottom .data span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+#latest-news .latest-news-card-bottom .data span i {
+  margin-right: 9px;
+  color: var(--color-primary);
+}
+#latest-news .latest-news-card-bottom .data span a {
+  color: #6f6b80;
+}
+#latest-news .latest-news-card-bottom .more-btn a {
+  color: #002147;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  padding: 4px 11px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+#latest-news .latest-news-card-bottom .more-btn a i {
+  padding-left: 5px;
+}
+#latest-news .latest-news-card-bottom .more-btn a:hover {
+  background-color: #002147;
+  color: white;
+}
+.More-all-btn {
+  margin-top: 35px;
+  text-align: center;
+}
+.More-all-btn a {
+  background-color: var(--color-primary);
+  color: #002147;
+  padding: 10px 40px 10px;
+  font-size: 14px;
+  line-height: 25px;
+  transition: all 0.35s ease-in-out;
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+  border-radius: 4px;
 }
