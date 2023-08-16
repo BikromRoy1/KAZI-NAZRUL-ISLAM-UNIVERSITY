@@ -949,7 +949,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Workshop Area
+# RECENT & UPCOMING EVENTS
 --------------------------------------------------------------*/
 #Events {
   background: #f1f7fd;
@@ -1491,4 +1491,186 @@ section {
   letter-spacing: 1px;
   overflow: hidden;
   border-radius: 4px;
+}
+/*--------------------------------------------------------------
+#  Recent and Upcoming Events
+--------------------------------------------------------------*/
+#latestEvent .latestEvent-news {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+}
+#latestEvent .latestEvent-news .latestEvent-image {
+  flex-shrink: 0;
+}
+#latestEvent .latestEvent-news .latestEvent-image img {
+  border-radius: 100%;
+  max-width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+#latestEvent .latestEvent-news .latestEvent-content {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+#latestEvent .latestEvent-news .latestEvent-content span {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+#latestEvent .latestEvent-news .latestEvent-content span i {
+  font-size: 18px;
+  padding-right: 3px;
+}
+#latestEvent .latestEvent-news .latestEvent-content h4 a {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: var(--text-title-color);
+}
+
+#latestEvent .latestEvent-news .latestEvent-content p {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #6f6b80;
+  margin-bottom: 0;
+}
+#latestEvent .latestEvent-news .latestEvent-content .event-location {
+  font-weight: 500;
+  color: var(--color-primary);
+  padding-top: 3px;
+}
+#latestEvent .latestEvent-news .latestEvent-content p i {
+  color: var(--color-primary);
+}
+#latestEvent .latestEvent-items .content .read-more-btn a {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 14px;
+  padding: 7px 15px;
+  border: 2px solid var(--text-title-color);
+  color: #002147;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+}
+#latestEvent .latestEvent-news .latestEvent-content .event-more-btn {
+  color: #002147;
+  font-size: 13px;
+  font-weight: 600;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  padding: 2px 17px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+#latestEvent .latestEvent-news .latestEvent-content .event-more-btn:hover {
+  background-color: #002147;
+  color: white;
+}
+#latestEvent .latestEvent-news .latestEvent-content .event-more {
+  margin-top: 10px;
+}
+
+/*--------------------------------------------------------------
+#  Notice
+--------------------------------------------------------------*/
+#dpNotice {
+  background: #f1f7fd;
+}
+#dpNotice .dpNotice-card {
+  padding: 30px 35px;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  height: 520px;
+  border-top: 3px solid #1bbd36;
+}
+
+#dpNotice .dpNotice-card .dpNotice-item {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+#dpNotice .dpNotice-title {
+  border-left: 2px solid #002147;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+#dpNotice .dpNotice-card .dpNotice-item h5 {
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  color: #002147;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+#dpNotice .dpNotice-card .dpNotice-item h5 a {
+  color: #002147;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+#dpNotice .dpNotice-card .dpNotice-item h5 a:hover {
+  color: var(--color-primary);
+}
+
+#dpNotice .dpNotice-card .dpNotice-item p {
+  color: #666666;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+#dpNotice .dpNotice-nav-btn {
+  color: var(--text-title-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#dpNotice .dpNotice-nav-btn:hover {
+  color: var(--color-primary);
+}
+
+#dpNotice .nav-pills .nav-link.active,
+#dpNotice .nav-pills .show > .nav-link {
+  background: #002147;
+  color: #fff;
+}
+.all-dpNotice-btn {
+  margin-top: 35px;
+}
+.all-dpNotice-btn a {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--text-title-color);
+  padding: 10px 40px 10px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: all 250ms;
+}
+.dpNotice-more-btn a {
+  color: #002147;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  padding: 4px 11px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.dpNotice-more-btn a:hover {
+  background-color: #002147;
+  color: white;
 }
