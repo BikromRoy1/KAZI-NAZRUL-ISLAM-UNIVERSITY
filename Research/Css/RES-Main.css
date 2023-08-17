@@ -1669,8 +1669,78 @@ section {
   font-weight: 600;
   transition: all 0.3s;
 }
-
 .dpNotice-more-btn a:hover {
+  background-color: #002147;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+#  Notable Alumni
+--------------------------------------------------------------*/
+#notableAlumni .notAlumni-card {
+  border: none;
+}
+#notableAlumni .notAlumni-items {
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+#notableAlumni .notAlumni-items img {
+  border-radius: 100px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #ececec;
+}
+#notableAlumni .notAlumni-info {
+  padding: 20px;
+  position: relative;
+  padding-bottom: 35px;
+}
+#notableAlumni .notAlumni-info::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-primary);
+  width: 90%;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+#notableAlumni .notAlumni-items h4 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+#notableAlumni .notAlumni-items span a {
+  color: var(--text-title-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+#notableAlumni .notAlumni-btn {
+  margin-top: 10px;
+}
+#notableAlumni .notAlumni-btn a {
+  color: #002147;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #002147;
+  border-radius: 30px;
+  padding: 4px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+#notableAlumni .notAlumni-btn a:hover {
   background-color: #002147;
   color: white;
 }
