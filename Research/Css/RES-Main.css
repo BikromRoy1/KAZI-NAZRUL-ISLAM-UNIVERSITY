@@ -1857,7 +1857,6 @@ section {
 }
 #facultyDetails .faculty-info .research-profile h5 {
   font-weight: 600;
-  /* color: var(--color-primary); */
   color: var(--text-title-color);
   line-height: 1.2;
   font-size: 15px;
@@ -1870,10 +1869,8 @@ section {
 #facultyDetails .faculty-social a {
   font-size: 19px;
   display: inline-block;
-  /* background: var(--color-primary); */
   background: var(--text-title-color);
   color: #fff;
-  /* color: #002147; */
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1888,4 +1885,10 @@ section {
   background: #00b371;
   color: #fff;
   text-decoration: none;
+}
+#facultyDetails .faculty-Biography p {
+  text-align: justify;
+  font-size: 15px;
+  color: #333333;
+  line-height: 26px;
 }
