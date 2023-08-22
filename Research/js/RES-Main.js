@@ -70,6 +70,15 @@
       behavior: 'smooth',
     });
   };
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
