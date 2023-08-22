@@ -1828,6 +1828,9 @@ section {
 /*--------------------------------------------------------------
 #  Faculty Members Details
 --------------------------------------------------------------*/
+#facultyDetails {
+  padding-bottom: 0px;
+}
 #facultyDetails .faculty-info {
   text-align: center;
   padding: 20px;
@@ -1888,9 +1891,31 @@ section {
 }
 #facultyDetails .faculty-Biography p {
   text-align: justify;
-  font-size: 15px;
+  font-size: 14px;
   color: #333333;
   line-height: 26px;
+}
+#facultyDetails .faculty-shot-Biography h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  margin-bottom: 10px;
+}
+#facultyDetails .faculty-Biography {
+  width: 100%;
+  border-top: 3px solid #47e483;
+  border-bottom: 3px solid #47e483;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+#facultyDetails .faculty-detail {
+  border-top: 3px solid #47e483;
+  border-bottom: 3px solid #47e483;
+  padding: 10px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -1945,7 +1970,16 @@ section {
 .facultyExperience .tab-content {
   margin-top: 30px;
 }
-
+.facultyExperience .facultyExperience-title {
+  border-bottom: 2px solid var(--color-primary);
+  margin-bottom: 20px;
+}
+.facultyExperience .facultyExperience-title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  text-transform: uppercase;
+}
 #facultyExperience .facultyExperience-table tr th {
   padding: 12px 8px;
   text-align: center;
@@ -1985,4 +2019,37 @@ section {
 }
 #facultyExperience .facultyExperience-table tr td:nth-child(7) {
   text-align: center;
+}
+#facultyExperience .publication-title {
+  text-decoration: underline;
+}
+#facultyExperience .publication-button {
+  display: block;
+  padding-top: 7px;
+}
+#facultyExperience .Members-contact i {
+  font-size: 20px;
+  color: #47e488;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7fbea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+#facultyExperience .Members-contact h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-title-color);
+}
+#facultyExperience .Members-contact p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #61ba90;
 }
