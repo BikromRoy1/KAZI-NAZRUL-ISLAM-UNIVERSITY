@@ -334,7 +334,7 @@ section {
   height: 81px;
   z-index: 997;
   transition: all 0.5s;
-  background: gold;
+  background: #fff;
   top: 75px;
 }
 #header.header-scrolled {
@@ -1915,19 +1915,19 @@ section {
 #facultyDetails .faculty-info h4 {
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: var(--text-title-color);
   line-height: 1.2;
   font-size: 18px;
 }
 #facultyDetails .faculty-info span {
   color: #666666;
-  font-size: 14px;
+  font-size: 15px;
 }
 #facultyDetails .faculty-info p {
   color: #333333;
   line-height: 26px;
-  margin: 0 0 15px;
+  margin: 0 0 0px;
   text-transform: none;
   font-weight: 400;
   font-size: 15px;
@@ -1945,19 +1945,21 @@ section {
   padding-bottom: 6px;
   margin-bottom: 12px;
 }
-
+#facultyDetails .social-link-padding {
+  margin-bottom: 25px;
+}
 #facultyDetails .faculty-social a {
-  font-size: 19px;
+  font-size: 18px;
   display: inline-block;
   background: var(--text-title-color);
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 5px;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -1985,6 +1987,17 @@ section {
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+#facultyDetails .faculty-Biography .faculty-address h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+#facultyDetails .faculty-Biography .faculty-address p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
 }
 #facultyDetails .faculty-detail {
   border-top: 3px solid #47e483;
