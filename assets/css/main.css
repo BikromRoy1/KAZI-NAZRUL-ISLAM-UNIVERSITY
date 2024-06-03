@@ -2528,3 +2528,153 @@ section {
   background-color: var(--color-primary);
   color: white;
 }
+
+/*! ********   Application Form -   ********** */
+/*--------------------------------------------------------------
+#  Application Form css 
+--------------------------------------------------------------*/
+.application-from .application-container {
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 44px 40px;
+}
+.application-from .application-header {
+  border-bottom: 1px solid #dadce0;
+  padding-bottom: 18px;
+  margin-bottom: 19px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.application-from .context-image {
+  height: 112px;
+  object-fit: cover;
+}
+.application-un-name {
+  text-align: left;
+  font-size: 26px;
+  color: var(--text-title-color);
+  font-weight: 600;
+}
+.application-from .application-title {
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #045282;
+}
+.application-from .application-subtitle {
+  color: #5f6368;
+  margin: 1em 0;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.0142857143em;
+  font-weight: 400;
+}
+.application-from .php-email-form input,
+.application-from .php-email-form textarea,
+.application-from .php-email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.application-from .php-email-form input,
+.application-from .php-email-form select {
+  height: 44px;
+}
+.application-from .php-email-form input[type='checkbox'] {
+  height: 0px !important;
+  padding: 8px !important;
+  width: 1em !important;
+  height: 1em !important;
+  border-radius: 0.25em !important;
+  margin-right: 7px !important;
+}
+.application-from .php-email-form input:focus,
+.application-from .php-email-form textarea:focus,
+.onlineAdmission .php-email-form select:focus {
+  border-color: var(--color-primary);
+}
+.application-from .php-email-form input::placeholder,
+.application-from .php-email-form textarea::placeholder,
+.onlineAdmission .php-email-form select::placeholder {
+  color: #b9bec6;
+}
+.application-from .php-email-form input {
+  padding: 10px 15px;
+}
+.application-from .php-email-form textarea {
+  padding: 12px 15px;
+}
+.application-from .php-email-form label {
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.application-from .php-email-form .font-color {
+  color: rgb(255, 0, 0);
+  font-weight: normal;
+}
+.input-file-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 25px 20px;
+  border: 2px dashed grey;
+}
+.application-from .application-warp h5 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: #045282;
+}
+.application-from .php-email-form input[type='radio'] {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+.form-check-input:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary) !important;
+}
+.application-from .application-warning h6 {
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #e84545;
+  font-size: 16px;
+}
+.application-from .application-warning h6 i {
+  font-size: 20px;
+  font-family: 400;
+}
+.application-next {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  letter-spacing: 0.0107142857em;
+  font-weight: 500;
+  background: #1a73e8;
+  color: var(--color-inverse);
+  padding: 5px 24px 5px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.application-back {
+  color: #5f6368;
+  border: none;
+  margin-left: -8px;
+  background: transparent;
+  font-size: 0.875rem;
+  letter-spacing: 0.0107142857em;
+  font-weight: 500;
+}
