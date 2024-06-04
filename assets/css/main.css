@@ -2678,3 +2678,86 @@ section {
   letter-spacing: 0.0107142857em;
   font-weight: 500;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    /* background: var(--color-background-topbar); */
+    background: #026e21;
+    padding: 10px 0;
+    font-size: 14px;
+    /* height: 130px; */
+}
+
+#topbar .contact-info h4 {
+    color: #fff;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#topbar .social-login-links a {
+    color: #fff;
+    line-height: 0;
+    transition: 0.3s;
+    font-weight: 500;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+#topbar .social-login-links a:hover {
+    color: var(--text-title-color);
+}
+#topbar .home-logo {
+    text-align: right;
+}
+#topbar .home-logo img {
+    height: 110px;
+    margin: 0 auto;
+}
+#topbar .government-logo {
+    text-align: left;
+}
+#topbar .government-logo img {
+    height: 110px;
+    margin: 0 auto;
+}
+#topbar .university-name {
+    text-align: center;
+}
+#topbar .university-name h2 {
+    text-transform: capitalize;
+    color: #fbfbfb;
+    /* text-shadow: 2px 2px 5px #000; */
+    text-shadow: 2px 3px 6px #000;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#topbar .university-name h3 {
+    margin-top: 8px;
+    color: #fbfbfb;
+    text-shadow: 2px 3px 6px #000;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Noto Serif Bengali', serif;
+}
+
+#topbar .university-name h3 {
+    font-size: 46px;
+}
+
