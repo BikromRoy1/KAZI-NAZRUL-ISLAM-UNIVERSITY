@@ -518,6 +518,73 @@
         </div>
       </section>
       <!-- End Breadcrumbs - At a Glance -->
+
+      <section>
+        <div class="container">
+          <div class="container mt-5">
+            <!-- Progress Bar -->
+            <div class="progress mb-4">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <form id="multiStepForm">
+              <!-- SECTION-I -->
+              <div class="step active">
+                <h5>SECTION-I: Fast Information</h5>
+                <!-- Your form fields here -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="nextStep()"
+                >
+                  Next
+                </button>
+              </div>
+
+              <!-- SECTION-II -->
+              <div class="step">
+                <h5>SECTION-II: Personal Details</h5>
+                <!-- Your form fields here -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="prevStep()"
+                >
+                  Back
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="nextStep()"
+                >
+                  Next
+                </button>
+              </div>
+
+              <!-- SECTION-III -->
+              <div class="step">
+                <h5>SECTION-III: Final Section</h5>
+                <!-- Your form fields here -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="prevStep()"
+                >
+                  Back
+                </button>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footers - Home Page -->

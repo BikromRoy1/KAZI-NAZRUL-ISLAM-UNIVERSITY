@@ -849,8 +849,9 @@ section {
 }
 
 #hero .carousel-inner .carousel-item {
-  transition-property: opacity;
+  transition-property: transform, opacity;
   background-position: center top;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 #hero .carousel-inner .carousel-item,
@@ -872,6 +873,20 @@ section {
 #hero .carousel-inner .active.carousel-item-end {
   left: 0;
   transform: translate3d(0, 0, 0);
+}
+
+/* Added Zoom-In Effect */
+#hero .carousel-item {
+  animation: zoom-in 5s ease-in-out forwards;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 #hero .carousel-control-next-icon,
@@ -2678,86 +2693,98 @@ section {
   letter-spacing: 0.0107142857em;
   font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
-
+/* step CSS */
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.progress {
+  height: 5px;
+  border-radius: 30px;
+}
+.progress-bar {
+  background-color: var(--color-primary);
+  border-radius: 30px;
+}
+.stepIndicators {
+  margin-bottom: 4px;
+  color: rgba(17, 17, 17, 0.5);
+  font-size: 13px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-    /* background: var(--color-background-topbar); */
-    background: #026e21;
-    padding: 10px 0;
-    font-size: 14px;
-    /* height: 130px; */
+  /* background: var(--color-background-topbar); */
+  background: #026e21;
+  padding: 10px 0;
+  font-size: 14px;
+  /* height: 130px; */
 }
 
 #topbar .contact-info h4 {
-    color: #fff;
-    margin-bottom: 0px;
-    font-weight: 600;
-    font-size: 17px;
+  color: #fff;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 #topbar .social-login-links a {
-    color: #fff;
-    line-height: 0;
-    transition: 0.3s;
-    font-weight: 500;
-    margin-left: 20px;
-    text-transform: uppercase;
+  color: #fff;
+  line-height: 0;
+  transition: 0.3s;
+  font-weight: 500;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 
 #topbar .social-login-links a:hover {
-    color: var(--text-title-color);
+  color: var(--text-title-color);
 }
 #topbar .home-logo {
-    text-align: right;
+  text-align: right;
 }
 #topbar .home-logo img {
-    height: 110px;
-    margin: 0 auto;
+  height: 110px;
+  margin: 0 auto;
 }
 #topbar .government-logo {
-    text-align: left;
+  text-align: left;
 }
 #topbar .government-logo img {
-    height: 110px;
-    margin: 0 auto;
+  height: 110px;
+  margin: 0 auto;
 }
 #topbar .university-name {
-    text-align: center;
+  text-align: center;
 }
 #topbar .university-name h2 {
-    text-transform: capitalize;
-    color: #fbfbfb;
-    /* text-shadow: 2px 2px 5px #000; */
-    text-shadow: 2px 3px 6px #000;
-    text-align: left;
-    font-size: 35px;
-    font-weight: 500;
-    margin-top: 10px;
+  text-transform: capitalize;
+  color: #fbfbfb;
+  /* text-shadow: 2px 2px 5px #000; */
+  text-shadow: 2px 3px 6px #000;
+  text-align: left;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 #topbar .university-name h3 {
-    margin-top: 8px;
-    color: #fbfbfb;
-    text-shadow: 2px 3px 6px #000;
-    text-align: left;
-    font-size: 32px;
-    font-weight: 600;
-    font-family: 'Noto Serif Bengali', serif;
+  margin-top: 8px;
+  color: #fbfbfb;
+  text-shadow: 2px 3px 6px #000;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Noto Serif Bengali', serif;
 }
 
 #topbar .university-name h3 {
-    font-size: 46px;
+  font-size: 46px;
 }
-

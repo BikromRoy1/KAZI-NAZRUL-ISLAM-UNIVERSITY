@@ -285,3 +285,74 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   window.addEventListener('load', aosInit);
 });
+
+/**
+ * Application from
+ */
+let currentStep = 0;
+const progressBar = document.querySelector('.progress-bar');
+const stepIndicator = document.getElementById('stepIndicator');
+
+function showStep(step) {
+  const steps = document.querySelectorAll('.step');
+  steps.forEach((stepElement, index) => {
+    stepElement.classList.toggle('active', index === step);
+  });
+  updateProgressBar();
+  updateStepIndicator(step);
+}
+
+function nextStep() {
+  const steps = document.querySelectorAll('.step');
+  if (currentStep < steps.length - 1) {
+    currentStep++;
+    showStep(currentStep);
+  }
+}
+
+function prevStep() {
+  if (currentStep > 0) {
+    currentStep--;
+    showStep(currentStep);
+  }
+}
+
+function validateStep(step) {
+  const currentStepFields = document
+    .querySelectorAll('.step')
+    [step].querySelectorAll('[required]');
+  let isValid = true;
+  currentStepFields.forEach((field) => {
+    if (!field.value.trim()) {
+      isValid = false;
+    }
+  });
+  if (isValid) {
+    nextStep();
+  } else {
+    document.getElementById(`step${step + 1}Error`).innerText =
+      'Please fill out all required fields.';
+  }
+}
+
+function updateProgressBar() {
+  const steps = document.querySelectorAll('.step');
+  const progress = ((currentStep + 1) / steps.length) * 100;
+  progressBar.style.width = `${progress}%`;
+  progressBar.setAttribute('aria-valuenow', progress);
+}
+
+function updateStepIndicator(step) {
+  const totalSteps = document.querySelectorAll('.step').length;
+  stepIndicator.innerText = `Step ${step + 1} of ${totalSteps}`;
+}
+
+document
+  .getElementById('multiStepForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Form submitted!');
+  });
+
+updateProgressBar(); // Initialize progress bar
+updateStepIndicator(currentStep); // Initialize step indicator

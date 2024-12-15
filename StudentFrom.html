@@ -627,1124 +627,1171 @@
             <div>
               <span class="application-un-name">University of Barishal</span>
               <p>Application Form (For Foreign Students)</p>
+              <div id="stepIndicator" class="stepIndicators"></div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
             <img
               alt=""
               class="context-image"
-              src="https://www.gstatic.com/acx/play/console//brt/play_console_ui_20240530_2240_RC00/signup/play.console.ui.common.images/getting_started/personal_account.svg"
+              src="https://i.ibb.co/tZqWrFY/main-logo.png"
             />
           </div>
           <div class="application-body">
-            <h4 class="application-title">Section-I</h4>
-            <p class="application-subtitle">
-              This information will only be used to contact you if we need to,
-              and won't be shown on Others people
-            </p>
             <form
               action="#"
               method="post"
               role="form"
-              class="php-email-form mt-4"
+              class="php-email-form"
+              id="multiStepForm"
             >
-              <!-- Fast Information -->
-              <div class="row align-items-center">
-                <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                  <div class="row">
-                    <div class="form-group">
-                      <label for="departmentName"
-                        >Name of Department :
-                        <font class="font-color">*</font></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="departmentName"
-                        id="departmentName"
-                        placeholder="Department Name"
-                        required
-                      />
-                    </div>
-                    <div class="col-md-6 form-group mt-3">
-                      <label for="AcademicYears"
-                        >Desired Degree :
-                        <font class="font-color">*</font></label
-                      >
-                      <select
-                        name="AcademicYears"
-                        id="AcademicYears"
-                        class="form-select"
-                        required
-                      >
-                        <option value="">Select Degree Programs</option>
-                        <option value="Academic Bachelor">Bachelor's</option>
-                        <option value="Academic Bachelor">Master's</option>
-                      </select>
-                    </div>
-                    <div class="col-md-6 form-group mt-3">
-                      <label for="applicationNumber">Academic Session : </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="applicationNumber"
-                        id="applicationNumber"
-                        placeholder="Your Session"
-                        required
-                      />
-                    </div>
-                  </div>
+              <!-- ======= SECTION-I   ======= -->
+              <div class="step active">
+                <div class="mb-4">
+                  <h4 class="application-title">Section-I</h4>
+                  <p class="application-subtitle">
+                    This information will only be used to contact you if we need
+                    to, and won't be shown on Others people
+                  </p>
                 </div>
-
-                <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                  <div class="row">
-                    <div class="col-md-12 form-group mt-4">
-                      <div class="input-file-container">
-                        <label for="studentPhoto" class="form-label"
-                          >Select Student Photo
+                <!-- Fast Information -->
+                <div class="row align-items-center">
+                  <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                    <div class="row">
+                      <div class="form-group">
+                        <label for="departmentName"
+                          >Name of Department :
                           <font class="font-color">*</font></label
                         >
                         <input
+                          type="text"
                           class="form-control"
-                          type="file"
-                          id="studentPhoto"
+                          name="departmentName"
+                          id="departmentName"
+                          placeholder="Department Name"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6 form-group mt-3">
+                        <label for="AcademicYears"
+                          >Desired Degree :
+                          <font class="font-color">*</font></label
+                        >
+                        <select
+                          name="AcademicYears"
+                          id="AcademicYears"
+                          class="form-select"
+                          required
+                        >
+                          <option value="">Select Degree Programs</option>
+                          <option value="Academic Bachelor">Bachelor's</option>
+                          <option value="Academic Bachelor">Master's</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 form-group mt-3">
+                        <label for="applicationNumber"
+                          >Academic Session :
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="applicationNumber"
+                          id="applicationNumber"
+                          placeholder="Your Session"
+                          required
                         />
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- End Fast Information -->
-              <div class="application-warp">
-                <h5>Personal Details</h5>
-              </div>
-
-              <!-- Personal information -->
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <label for="title"
-                    >Title (Mr./Ms./Mrs) :
-                    <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="title"
-                    id="title"
-                    placeholder="Your Title"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <label for="familyName"
-                    >Family name/Surname :
-                    <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="familyName"
-                    id="familyName"
-                    placeholder="Surname"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="FirstName"
-                    >First Name : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="FirstName"
-                    id="FirstName"
-                    placeholder="Your First Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="MiddleName"
-                    >Middle Name : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="MiddleName"
-                    id="MiddleName"
-                    placeholder="Your Middle Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="fatherName "
-                    >Father's Name : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="fatherName"
-                    id="fatherName"
-                    placeholder="Father Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="motherName "
-                    >Mother's Name : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="motherName"
-                    id="motherName"
-                    placeholder="Mother Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="passport"
-                    >passport Number : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="passport"
-                    id="passport"
-                    placeholder="Example - 19825624603112948"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label class="d-block" for="passport"
-                    >Gender : <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionA"
-                      type="radio"
-                      name="newField2"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionA">Female</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionB"
-                      type="radio"
-                      name="newField2"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionB">Male</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionC"
-                      type="radio"
-                      name="newField2"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionC">Others</label>
+                  <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="row">
+                      <div class="col-md-12 form-group mt-4">
+                        <div class="input-file-container">
+                          <label for="studentPhoto" class="form-label"
+                            >Select Student Photo
+                            <font class="font-color">*</font></label
+                          >
+                          <input
+                            class="form-control"
+                            type="file"
+                            id="studentPhoto"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="BirthDay"
-                    >Date of Birth : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="BirthDay"
-                    id="BirthDay"
-                    placeholder="DD/MM/YYYY"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="Nationality"
-                    >Nationality : <font class="font-color">*</font></label
-                  >
-                  <select
-                    name="Nationality"
-                    id="Nationality"
-                    class="form-select"
-                    required
-                  >
-                    <option value="">Select Nationality</option>
-                    <option value="Gender">Bangladesh</option>
-                    <option value="Gender">Indian</option>
-                    <option value="Gender">Nepal</option>
-                    <option value="Gender">United States</option>
-                  </select>
-                </div>
-              </div>
-              <!-- End Personal information -->
 
-              <!--  Present Address -->
-              <div class="application-warp">
-                <h5>Present Address</h5>
-              </div>
-              <div class="row">
-                <div class="form-group mt-3 mt-md-0">
-                  <label for="address "
-                    >Street Address or village :
-                    <font class="font-color">*</font></label
-                  >
-                  <textarea
-                    class="form-control"
-                    name="address"
-                    id="address"
-                    rows="3"
-                    placeholder="Your Address"
-                    required
-                  ></textarea>
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="district">district name: </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="district"
-                    id="district"
-                    placeholder="District name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="fatherOccupation ">States : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="States"
-                    id="States"
-                    placeholder="States"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="country"
-                    >Country : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="country"
-                    id="country"
-                    placeholder="country name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Postcode">Post code : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Postcode"
-                    id="Postcode"
-                    placeholder="Post Code"
-                    required
-                  />
+                <!-- End Fast Information -->
+                <div class="application-warp">
+                  <h5>Personal Details</h5>
                 </div>
 
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="telephone"
-                    >telephone number : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="telephone"
-                    id="telephone"
-                    placeholder="+020000000"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Fax"
-                    >Fax Number : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Fax"
-                    id="Fax"
-                    placeholder="Example: (123)-456-7890"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Mobile "
-                    >Mobile Number: <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Mobile"
-                    id="Mobile"
-                    placeholder="+8801"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="EmailAdress ">Email Address : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="EmailAdress"
-                    id="EmailAdress"
-                    placeholder="Email Address"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Present Address -->
-              <!--  Permanent Address -->
-              <div class="application-warp">
-                <h5>Permanent Address</h5>
-              </div>
-              <div class="row">
-                <div class="form-group mt-3 mt-md-0">
-                  <label for="address "
-                    >Street Address or village :
-                    <font class="font-color">*</font></label
-                  >
-                  <textarea
-                    class="form-control"
-                    name="address"
-                    id="address"
-                    rows="3"
-                    placeholder="Your Address"
-                    required
-                  ></textarea>
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="district">district name: </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="district"
-                    id="district"
-                    placeholder="District name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="fatherOccupation ">States : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="States"
-                    id="States"
-                    placeholder="States"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="country"
-                    >Country : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="country"
-                    id="country"
-                    placeholder="country name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Postcode">Post code : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Postcode"
-                    id="Postcode"
-                    placeholder="Post Code"
-                    required
-                  />
-                </div>
-
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="telephone"
-                    >telephone number : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="telephone"
-                    id="telephone"
-                    placeholder="+020000000"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Fax"
-                    >Fax Number : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Fax"
-                    id="Fax"
-                    placeholder="Example: (123)-456-7890"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Mobile "
-                    >Mobile Number: <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Mobile"
-                    id="Mobile"
-                    placeholder="+8801"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="EmailAdress ">Email Address : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="EmailAdress"
-                    id="EmailAdress"
-                    placeholder="Email Address"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Permanent Address -->
-              <!-- Start Other's -->
-              <div class="application-warning">
-                <h6>
-                  <i class="ri-spam-2-line"></i> Contact Person in Bangladesh(if
-                  any)
-                </h6>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="personName">Name : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="personName"
-                    id="personName"
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="personEmail">Email : </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="personEmail"
-                    id="personEmail"
-                    placeholder="Email Address"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="personNumber">Phone number : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="personNumber"
-                    id="personNumber"
-                    placeholder="Phone number"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End other's -->
-
-              <!-- Start Other's -->
-              <div class="application-warning">
-                <h6><i class="ri-spam-2-line"></i> Contact Person At home</h6>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="personName">Name : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="personName"
-                    id="personName"
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="personEmail">Email : </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="personEmail"
-                    id="personEmail"
-                    placeholder="Email Address"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="personNumber">Phone number : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="personNumber"
-                    id="personNumber"
-                    placeholder="Phone number"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End other's -->
-              <!-- Start Education Background -->
-              <div class="application-warp">
-                <h5>Educational Background</h5>
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="Examination">Name/type of Examination : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Examination"
-                    id="Examination"
-                    placeholder="Name Examination"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="Institution"
-                    >Institution/Board/Authority :
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Institution"
-                    id="Institution"
-                    placeholder="Institution"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <label for="completion">Year of completion : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="completion"
-                    id="completion"
-                    placeholder="Write a Year"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Duration">Duration of Study : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Duration"
-                    id="Duration"
-                    placeholder="Write a Duration"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="Division">Result (Grade/Division/Class) : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Division"
-                    id="Division"
-                    placeholder="Write a Grade/Division/Class"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3">
-                  <label for="CGPA">C-GPA/Marks(%) : </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="CGPA"
-                    id="CGPA"
-                    placeholder="Write a Marks"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Education Background -->
-              <div class="text-end mt-4">
-                <button class="application-back">Back</button>
-                <button class="application-next">Next</button>
-              </div>
-
-              <!-- Next Section==02 -->
-              <h4 class="application-title">Section-II</h4>
-              <p class="application-subtitle">
-                This information will only be background information
-              </p>
-              <!-- Part 01 -->
-              <div class="row">
-                <div class="col-md-12 form-group">
-                  <label class="d-block" for="familyMember"
-                    >(a) Within the last two years, have you or your family
-                    member even had tuberculosis of the lungs?
-                    <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
+                <!-- Personal information -->
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label for="title"
+                      >Title (Mr./Ms./Mrs) :
+                      <font class="font-color">*</font></label
+                    >
                     <input
-                      class="form-check-input"
-                      id="optionE"
-                      type="radio"
-                      name="newField4"
-                      data-sb-validations=""
+                      type="text"
+                      class="form-control"
+                      name="title"
+                      id="title"
+                      placeholder="Your Title"
+                      required
                     />
-                    <label class="form-check-label" for="optionE">Yes</label>
                   </div>
-                  <div class="form-check form-check-inline">
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <label for="familyName"
+                      >Family name/Surname :
+                      <font class="font-color">*</font></label
+                    >
                     <input
-                      class="form-check-input"
-                      id="optionD"
-                      type="radio"
-                      name="newField4"
-                      data-sb-validations=""
+                      type="text"
+                      class="form-control"
+                      name="familyName"
+                      id="familyName"
+                      placeholder="Surname"
+                      required
                     />
-                    <label class="form-check-label" for="optionD">No</label>
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="FirstName"
+                      >First Name : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="FirstName"
+                      id="FirstName"
+                      placeholder="Your First Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="MiddleName"
+                      >Middle Name : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="MiddleName"
+                      id="MiddleName"
+                      placeholder="Your Middle Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="fatherName "
+                      >Father's Name : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="fatherName"
+                      id="fatherName"
+                      placeholder="Father Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="motherName "
+                      >Mother's Name : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="motherName"
+                      id="motherName"
+                      placeholder="Mother Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="passport"
+                      >passport Number :
+                      <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="passport"
+                      id="passport"
+                      placeholder="Example - 19825624603112948"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label class="d-block" for="passport"
+                      >Gender : <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionA"
+                        type="radio"
+                        name="newField2"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionA"
+                        >Female</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionB"
+                        type="radio"
+                        name="newField2"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionB">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionC"
+                        type="radio"
+                        name="newField2"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionC"
+                        >Others</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="BirthDay"
+                      >Date of Birth : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="BirthDay"
+                      id="BirthDay"
+                      placeholder="DD/MM/YYYY"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="Nationality"
+                      >Nationality : <font class="font-color">*</font></label
+                    >
+                    <select
+                      name="Nationality"
+                      id="Nationality"
+                      class="form-select"
+                      required
+                    >
+                      <option value="">Select Nationality</option>
+                      <option value="Gender">Bangladesh</option>
+                      <option value="Gender">Indian</option>
+                      <option value="Gender">Nepal</option>
+                      <option value="Gender">United States</option>
+                    </select>
                   </div>
                 </div>
+                <!-- End Personal information -->
+
+                <!--  Present Address -->
+                <div class="application-warp">
+                  <h5>Present Address</h5>
+                </div>
+                <div class="row">
+                  <div class="form-group mt-3 mt-md-0">
+                    <label for="address "
+                      >Street Address or village :
+                      <font class="font-color">*</font></label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="address"
+                      id="address"
+                      rows="3"
+                      placeholder="Your Address"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="district">district name: </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="district"
+                      id="district"
+                      placeholder="District name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="fatherOccupation ">States : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="States"
+                      id="States"
+                      placeholder="States"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="country"
+                      >Country : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="country"
+                      id="country"
+                      placeholder="country name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Postcode">Post code : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Postcode"
+                      id="Postcode"
+                      placeholder="Post Code"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="telephone"
+                      >telephone number :
+                      <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="telephone"
+                      id="telephone"
+                      placeholder="+020000000"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Fax"
+                      >Fax Number : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Fax"
+                      id="Fax"
+                      placeholder="Example: (123)-456-7890"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Mobile "
+                      >Mobile Number: <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Mobile"
+                      id="Mobile"
+                      placeholder="+8801"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="EmailAdress ">Email Address : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="EmailAdress"
+                      id="EmailAdress"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End Present Address -->
+                <!--  Permanent Address -->
+                <div class="application-warp">
+                  <h5>Permanent Address</h5>
+                </div>
+                <div class="row">
+                  <div class="form-group mt-3 mt-md-0">
+                    <label for="address "
+                      >Street Address or village :
+                      <font class="font-color">*</font></label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="address"
+                      id="address"
+                      rows="3"
+                      placeholder="Your Address"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="district">district name: </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="district"
+                      id="district"
+                      placeholder="District name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="fatherOccupation ">States : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="States"
+                      id="States"
+                      placeholder="States"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="country"
+                      >Country : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="country"
+                      id="country"
+                      placeholder="country name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Postcode">Post code : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Postcode"
+                      id="Postcode"
+                      placeholder="Post Code"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="telephone"
+                      >telephone number :
+                      <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="telephone"
+                      id="telephone"
+                      placeholder="+020000000"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Fax"
+                      >Fax Number : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Fax"
+                      id="Fax"
+                      placeholder="Example: (123)-456-7890"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Mobile "
+                      >Mobile Number: <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Mobile"
+                      id="Mobile"
+                      placeholder="+8801"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="EmailAdress ">Email Address : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="EmailAdress"
+                      id="EmailAdress"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End Permanent Address -->
+                <!-- Start Other's -->
                 <div class="application-warning">
                   <h6>
-                    <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    <i class="ri-spam-2-line"></i> Contact Person in
+                    Bangladesh(if any)
                   </h6>
                 </div>
-                <div class="col-md-6 col-lg-4 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="family01"
-                    id="family01"
-                    placeholder="Write a message"
-                    required
-                  />
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="personName">Name : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="personName"
+                      id="personName"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="personEmail">Email : </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="personEmail"
+                      id="personEmail"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="personNumber">Phone number : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="personNumber"
+                      id="personNumber"
+                      placeholder="Phone number"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="family02"
-                    id="family02"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="family02"
-                    id="family02"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End part 01 -->
+                <!-- End other's -->
 
-              <!-- Part 02 -->
-              <div class="row">
-                <div class="col-md-12 form-group mt-4">
-                  <label class="d-block" for="health"
-                    >(b) Do you have any physical or mental disorder that would
-                    require social and/or health services?
-                    <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionF"
-                      type="radio"
-                      name="newField5"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionF">Yes</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionG"
-                      type="radio"
-                      name="newField5"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionG">No</label>
-                  </div>
-                </div>
+                <!-- Start Other's -->
                 <div class="application-warning">
-                  <h6>
-                    <i class="ri-spam-2-line"></i> If "Yes" provide details :
-                  </h6>
+                  <h6><i class="ri-spam-2-line"></i> Contact Person At home</h6>
                 </div>
-                <div class="col-md-6 col-lg-4 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="health01"
-                    id="health01"
-                    placeholder="Write a message"
-                    required
-                  />
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="personName">Name : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="personName"
+                      id="personName"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="personEmail">Email : </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="personEmail"
+                      id="personEmail"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="personNumber">Phone number : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="personNumber"
+                      id="personNumber"
+                      placeholder="Phone number"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="health02"
-                    id="health02"
-                    placeholder="Write a message"
-                    required
-                  />
+                <!-- End other's -->
+                <!-- Start Education Background -->
+                <div class="application-warp">
+                  <h5>Educational Background</h5>
                 </div>
-                <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="health02"
-                    id="health02"
-                    placeholder="Write a message"
-                    required
-                  />
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="Examination">Name/type of Examination : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Examination"
+                      id="Examination"
+                      placeholder="Name Examination"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="Institution"
+                      >Institution/Board/Authority :
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Institution"
+                      id="Institution"
+                      placeholder="Institution"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <label for="completion">Year of completion : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="completion"
+                      id="completion"
+                      placeholder="Write a Year"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Duration">Duration of Study : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Duration"
+                      id="Duration"
+                      placeholder="Write a Duration"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="Division"
+                      >Result (Grade/Division/Class) :
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Division"
+                      id="Division"
+                      placeholder="Write a Grade/Division/Class"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3">
+                    <label for="CGPA">C-GPA/Marks(%) : </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="CGPA"
+                      id="CGPA"
+                      placeholder="Write a Marks"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End Education Background -->
+                <div class="text-end mt-4">
+                  <button class="application-next" onclick="validateStep(0)">
+                    Next
+                  </button>
                 </div>
               </div>
-              <!-- End Part 02 -->
+              <!-- ======= End SECTION-I   ======= -->
 
-              <!-- Part 03 -->
-              <div class="row">
-                <div class="col-md-12 form-group mt-4">
-                  <label class="d-block" for="Visa"
-                    >(C) Have you ever been refused a visa or permit, denied
-                    entry or ordered to leave Bangladesh or any other country?
-                    <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionH"
-                      type="radio"
-                      name="newField6"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionH">Yes</label>
+              <!-- ======= SECTION-II   ======= -->
+              <div class="step">
+                <div>
+                  <h4 class="application-title">Section-II</h4>
+                  <p class="application-subtitle">
+                    This information will only be background information
+                  </p>
+                </div>
+                <!-- Part 01 -->
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label class="d-block" for="familyMember"
+                      >(a) Within the last two years, have you or your family
+                      member even had tuberculosis of the lungs?
+                      <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionE"
+                        type="radio"
+                        name="newField4"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionE">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionD"
+                        type="radio"
+                        name="newField4"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionD">No</label>
+                    </div>
                   </div>
-                  <div class="form-check form-check-inline">
+                  <div class="application-warning">
+                    <h6>
+                      <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    </h6>
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group">
                     <input
-                      class="form-check-input"
-                      id="optionI"
-                      type="radio"
-                      name="newField6"
-                      data-sb-validations=""
+                      type="text"
+                      class="form-control"
+                      name="family01"
+                      id="family01"
+                      placeholder="Write a message"
+                      required
                     />
-                    <label class="form-check-label" for="optionI">No</label>
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="family02"
+                      id="family02"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="family02"
+                      id="family02"
+                      placeholder="Write a message"
+                      required
+                    />
                   </div>
                 </div>
-                <div class="application-warning">
-                  <h6>
-                    <i class="ri-spam-2-line"></i> If "Yes" provide details :
-                  </h6>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Visa01"
-                    id="Visa01"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Visa02"
-                    id="Visa02"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Part 03 -->
+                <!-- End part 01 -->
 
-              <!-- Part 04 -->
-              <div class="row">
-                <div class="col-md-12 form-group mt-4">
-                  <label class="d-block" for="remain"
-                    >(D) Have you previously applied to enter or remain in
-                    Bangladesh? <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionJ"
-                      type="radio"
-                      name="newField7"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionJ">Yes</label>
+                <!-- Part 02 -->
+                <div class="row">
+                  <div class="col-md-12 form-group mt-4">
+                    <label class="d-block" for="health"
+                      >(b) Do you have any physical or mental disorder that
+                      would require social and/or health services?
+                      <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionF"
+                        type="radio"
+                        name="newField5"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionF">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionG"
+                        type="radio"
+                        name="newField5"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionG">No</label>
+                    </div>
                   </div>
-                  <div class="form-check form-check-inline">
+                  <div class="application-warning">
+                    <h6>
+                      <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    </h6>
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group">
                     <input
-                      class="form-check-input"
-                      id="optionK"
-                      type="radio"
-                      name="newField7"
-                      data-sb-validations=""
+                      type="text"
+                      class="form-control"
+                      name="health01"
+                      id="health01"
+                      placeholder="Write a message"
+                      required
                     />
-                    <label class="form-check-label" for="optionK">No</label>
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="health02"
+                      id="health02"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="health02"
+                      id="health02"
+                      placeholder="Write a message"
+                      required
+                    />
                   </div>
                 </div>
-                <div class="application-warning">
-                  <h6>
-                    <i class="ri-spam-2-line"></i> If "Yes" provide details :
-                  </h6>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="remain01"
-                    id="remain01"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="remain02"
-                    id="remain02"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Part 04 -->
+                <!-- End Part 02 -->
 
-              <!-- Part 05 -->
-              <div class="row">
-                <div class="col-md-12 form-group mt-4">
-                  <label class="d-block" for="criminal"
-                    >(E) have you ever committed, been arrested for, been
-                    charged with or convicted of any criminal offense in any
-                    country? <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionL"
-                      type="radio"
-                      name="newField8"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionL">Yes</label>
+                <!-- Part 03 -->
+                <div class="row">
+                  <div class="col-md-12 form-group mt-4">
+                    <label class="d-block" for="Visa"
+                      >(C) Have you ever been refused a visa or permit, denied
+                      entry or ordered to leave Bangladesh or any other country?
+                      <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionH"
+                        type="radio"
+                        name="newField6"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionH">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionI"
+                        type="radio"
+                        name="newField6"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionI">No</label>
+                    </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      id="optionM"
-                      type="radio"
-                      name="newField8"
-                      data-sb-validations=""
-                    />
-                    <label class="form-check-label" for="optionM">No</label>
+                  <div class="application-warning">
+                    <h6>
+                      <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    </h6>
                   </div>
-                </div>
-                <div class="application-warning">
-                  <h6>
-                    <i class="ri-spam-2-line"></i> If "Yes" provide details :
-                  </h6>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="criminal01"
-                    id="criminal01"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="criminal02"
-                    id="criminal02"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Part 05 -->
-
-              <!-- Part 06 -->
-              <div class="row">
-                <div class="col-md-12 form-group mt-4">
-                  <label class="d-block" for="Association"
-                    >(F) are you, or have you ever been a member or association
-                    with any political party, or other group or organization
-                    which has engaged in or advocate violence as a means to
-                    achieving a political or religious objective, or which has
-                    been associated with criminal activity at any time?
-                    <font class="font-color">*</font></label
-                  >
-                  <div class="form-check form-check-inline">
+                  <div class="col-md-6 form-group">
                     <input
-                      class="form-check-input"
-                      id="optionN"
-                      type="radio"
-                      name="newField9"
-                      data-sb-validations=""
+                      type="text"
+                      class="form-control"
+                      name="Visa01"
+                      id="Visa01"
+                      placeholder="Write a message"
+                      required
                     />
-                    <label class="form-check-label" for="optionN">Yes</label>
                   </div>
-                  <div class="form-check form-check-inline">
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
                     <input
-                      class="form-check-input"
-                      id="optionO"
-                      type="radio"
-                      name="newField9"
-                      data-sb-validations=""
+                      type="text"
+                      class="form-control"
+                      name="Visa02"
+                      id="Visa02"
+                      placeholder="Write a message"
+                      required
                     />
-                    <label class="form-check-label" for="optionO">No</label>
                   </div>
                 </div>
-                <div class="application-warning">
-                  <h6>
-                    <i class="ri-spam-2-line"></i> If "Yes" provide details :
-                  </h6>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Association01"
-                    id="Association01"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Association02"
-                    id="Association02"
-                    placeholder="Write a message"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- End Part 06 -->
+                <!-- End Part 03 -->
 
-              <div class="text-end mt-4">
-                <button class="application-back">Back</button>
-                <button class="application-next">Next</button>
-              </div>
+                <!-- Part 04 -->
+                <div class="row">
+                  <div class="col-md-12 form-group mt-4">
+                    <label class="d-block" for="remain"
+                      >(D) Have you previously applied to enter or remain in
+                      Bangladesh? <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionJ"
+                        type="radio"
+                        name="newField7"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionJ">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionK"
+                        type="radio"
+                        name="newField7"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionK">No</label>
+                    </div>
+                  </div>
+                  <div class="application-warning">
+                    <h6>
+                      <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    </h6>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="remain01"
+                      id="remain01"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="remain02"
+                      id="remain02"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End Part 04 -->
 
-              <!-- Section 03 -->
-              <h4 class="application-title">Section-III</h4>
-              <p class="application-subtitle">
-                This information will only be Declaration.
-              </p>
+                <!-- Part 05 -->
+                <div class="row">
+                  <div class="col-md-12 form-group mt-4">
+                    <label class="d-block" for="criminal"
+                      >(E) have you ever committed, been arrested for, been
+                      charged with or convicted of any criminal offense in any
+                      country? <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionL"
+                        type="radio"
+                        name="newField8"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionL">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionM"
+                        type="radio"
+                        name="newField8"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionM">No</label>
+                    </div>
+                  </div>
+                  <div class="application-warning">
+                    <h6>
+                      <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    </h6>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="criminal01"
+                      id="criminal01"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="criminal02"
+                      id="criminal02"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- End Part 05 -->
 
-              <div class="row">
-                <div class="col-md-12 form-group">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="Undersigned"
-                  />
-                  <label class="form-check-label d-inline" for="Undersigned">
-                    I, The undersigned, do hereby declare that the details given
-                    above are true.
-                  </label>
+                <!-- Part 06 -->
+                <div class="row">
+                  <div class="col-md-12 form-group mt-4">
+                    <label class="d-block" for="Association"
+                      >(F) are you, or have you ever been a member or
+                      association with any political party, or other group or
+                      organization which has engaged in or advocate violence as
+                      a means to achieving a political or religious objective,
+                      or which has been associated with criminal activity at any
+                      time? <font class="font-color">*</font></label
+                    >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionN"
+                        type="radio"
+                        name="newField9"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionN">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        id="optionO"
+                        type="radio"
+                        name="newField9"
+                        data-sb-validations=""
+                      />
+                      <label class="form-check-label" for="optionO">No</label>
+                    </div>
+                  </div>
+                  <div class="application-warning">
+                    <h6>
+                      <i class="ri-spam-2-line"></i> If "Yes" provide details :
+                    </h6>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Association01"
+                      id="Association01"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Association02"
+                      id="Association02"
+                      placeholder="Write a message"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col-md-12 form-group mt-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="reputation"
-                  />
-                  <label class="form-check-label d-inline" for="reputation">
-                    I, also declare that i will always abide by the rules and
-                    regulations of this University and will not take part in any
-                    activities that damage its reputation.
-                  </label>
-                </div>
-                <div class="col-md-12 form-group mt-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="refrain"
-                  />
-                  <label class="form-check-label d-inline" for="refrain">
-                    I, will also refrain from committing any act subversive of
-                    the interests of Bangladesh or discipline
-                  </label>
-                </div>
-                <div class="col-md-12 form-group mt-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="cancellation"
-                  />
-                  <label class="form-check-label d-inline" for="cancellation">
-                    I, understand that submission of false or misleading
-                    information may result in the cancellation of my studentship
-                    at this University.
-                  </label>
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="Signature"
-                    >( Signature of applicant, electronic signature accepted ) :
-                    <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="Signature"
-                    id="Signature"
-                    placeholder="Write a Your name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group mt-3">
-                  <label for="signatureDate"
-                    >Signature Date : <font class="font-color">*</font></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="signatureDate"
-                    id="signatureDate"
-                    placeholder="DD/MM/YYYY"
-                    required
-                  />
+                <!-- End Part 06 -->
+
+                <div class="text-end mt-4">
+                  <button class="application-back" onclick="prevStep()">
+                    Back
+                  </button>
+                  <button class="application-next" onclick="validateStep(1)">
+                    Next
+                  </button>
                 </div>
               </div>
-              <div class="text-center mt-4">
-                <button class="application-next" type="submit">
-                  submit application
-                </button>
+              <!-- ======= End SECTION-II   ======= -->
+
+              <!-- ======= SECTION-III   ======= -->
+              <div class="step">
+                <div>
+                  <h4 class="application-title">Section-III</h4>
+                  <p class="application-subtitle">
+                    This information will only be Declaration.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Undersigned"
+                    />
+                    <label class="form-check-label d-inline" for="Undersigned">
+                      I, The undersigned, do hereby declare that the details
+                      given above are true.
+                    </label>
+                  </div>
+                  <div class="col-md-12 form-group mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="reputation"
+                    />
+                    <label class="form-check-label d-inline" for="reputation">
+                      I, also declare that i will always abide by the rules and
+                      regulations of this University and will not take part in
+                      any activities that damage its reputation.
+                    </label>
+                  </div>
+                  <div class="col-md-12 form-group mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="refrain"
+                    />
+                    <label class="form-check-label d-inline" for="refrain">
+                      I, will also refrain from committing any act subversive of
+                      the interests of Bangladesh or discipline
+                    </label>
+                  </div>
+                  <div class="col-md-12 form-group mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="cancellation"
+                    />
+                    <label class="form-check-label d-inline" for="cancellation">
+                      I, understand that submission of false or misleading
+                      information may result in the cancellation of my
+                      studentship at this University.
+                    </label>
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="Signature"
+                      >( Signature of applicant, electronic signature accepted )
+                      : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Signature"
+                      id="Signature"
+                      placeholder="Write a Your name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3">
+                    <label for="signatureDate"
+                      >Signature Date : <font class="font-color">*</font></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="signatureDate"
+                      id="signatureDate"
+                      placeholder="DD/MM/YYYY"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="application-back" onclick="prevStep()">
+                    Back
+                  </button>
+                  <button class="application-next" type="submit">
+                    submit application
+                  </button>
+                </div>
               </div>
+              <!-- ======= End SECTION-III   ======= -->
             </form>
           </div>
         </div>
